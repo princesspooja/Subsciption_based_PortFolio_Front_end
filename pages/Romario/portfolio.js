@@ -15,12 +15,8 @@ const Portfolio = () => {
 
         </Head>
         <Navigation />
-        
         <Portfolios />
-
-        
         <Footer />
-
 
 
     </>)
