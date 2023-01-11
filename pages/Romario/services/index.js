@@ -17,7 +17,7 @@ const Index = () => {
                 <div className="row-ecommerce">
                     <div className="col-lg-10">
                         <div className="page-title">
-                            <h1>Service Details</h1>
+                            <h1 className="div_title">Services</h1>
                             <ul className="breadcrumbs-link">
                                 <li>
 
@@ -25,7 +25,7 @@ const Index = () => {
 
                                 </li>
                                 <li><i className="fa fa-chevron-right"></i></li>
-                                <li>Service Details</li>
+                                <li>Services</li>
                             </ul>
                         </div>
                     </div>

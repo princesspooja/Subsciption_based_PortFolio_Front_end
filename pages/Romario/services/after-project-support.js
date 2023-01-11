@@ -18,14 +18,14 @@ const After_project_support = () =>
         <div className="row-ecommerce">
             <div className="col-lg-10">
                 <div className="page-title">
-                    <h1>Service Details</h1>
+                    <h1 className="div_title">Service Details</h1>
                     <ul className="breadcrumbs-link">
                         <li>
                             <a>Home</a>
 
                         </li>
                         <li><i className="fa fa-chevron-right"></i></li>
-                        <li>Service Details</li>
+                        <li >Service Details</li>
                     </ul>
                 </div>
             </div>

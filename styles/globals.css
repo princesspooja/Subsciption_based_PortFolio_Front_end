@@ -6,7 +6,7 @@
 /* services */
 
 /* for header */
-.hero-ecommerce {
+/* .hero-ecommerce {
   padding: 210px 120px;
   background: #FF373708;
 }
@@ -26,6 +26,7 @@
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  text-align: center;
 }
 
 .col-lg-10 {
@@ -48,8 +49,10 @@
 }
 
 .breadcrumbs-link {
+  color: #565872;
+  line-height: 1.9;
   margin: 0px;
-  padding: 0px;
+  padding: 29px;
   list-style-type: none;
   display: flex;
   text-align: center;
@@ -73,7 +76,7 @@
   text-decoration: none;
   background-color: transparent;
   cursor: pointer;
-}
+} */
 
 /* service card */
 
@@ -476,9 +479,14 @@
 
 /* Ecommerce-website and all routes*/
 
+.inner-section-gap{
+  padding-top: 61px;
+    padding-bottom: 61px;
+
+}
 
 .hero-ecommerce{
-  padding: 210px 120px;
+  padding: 110px 120px;
   background: #FF373708;
 }
 .container-ecommerce{
@@ -497,6 +505,7 @@
   margin-left: -15px;
 }
 .col-lg-10{
+  text-align: center;
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -513,8 +522,10 @@
   margin: 0px;
 }
 .breadcrumbs-link{
+  color: #565872;
+  line-height: 1.9;
   margin: 0px;
-  padding: 0px;
+  padding: 29px;
   list-style-type: none;
   display: flex;
   text-align: center;
@@ -529,6 +540,17 @@
   margin-inline-end: 0px;
   padding-inline-start: 40px;
 }
+.breadcrumbs-link li{
+  padding-right: 10px;
+  padding-left: 10px;
+  color: #565872;
+  font-family: var(--font-pop);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.9;
+
+}
+
 .breadcrumbs-link a{
   display: inline-block;
   transition: all 0.3s ease-out 0s;
@@ -537,7 +559,6 @@
   background-color: transparent;
   cursor: pointer;
 }
-
 
 .container-a{
   text-align: center;
@@ -563,6 +584,15 @@
 text-align: center;
 margin-bottom: 20px;
 }
+
+.services-first{
+  padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 61px;
+    padding-bottom: 61px;
+}
+
+
 .social{
   display: flex;
 flex-wrap: wrap;
@@ -603,16 +633,19 @@ text-align: left;
   cursor: pointer;
 }
 .social li a .fa-facebook{
+  padding-right: 10px;
   color: #3b5998;
   border-color: #3b5998;
   
   
 }
 .social li a .fa-twitter{
+  padding-right: 10px;
   color: #00acee;
   border-color: #00acee;
 }
 .social li a .fa-linkedin{
+  padding-right: 10px;
   color: #0e76a8;
   border-color: #0e76a8;
 }
