@@ -184,15 +184,7 @@
 }
 
 #home_ul {
-  padding-left: 365px;
-}
-
-#home_ul li a {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.4;
-  padding: 10px;
-  color: var(--color-black);
+  margin-right: 12rem!important;
 }
 
 #home_ul li {
@@ -202,13 +194,24 @@
   cursor: pointer;
 }
 
+#home_ul li a {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  padding: 10px;
+  color: #000000;
+}
+
+
+
 #home_ul li .active {
   color: red;
 }
 
-#home_ul li:hover {
+#home_ul li a:hover {
   color: red;
-}
+} 
+
 
 
 #home_form {
