@@ -111,19 +111,19 @@ const Logo_Design = () => {
                         <h4 className="sidebar-catogory-title">categories</h4>
                         <ul className="catogory-link">
                             <li className="active-li">
-                                <a href="/">All</a>
+                                <a >All</a>
                                 <span className="spn-number">(6)</span>
                             </li>
                             <li>
-                                <a href="/">Web Development</a>
+                                <a >Web Development</a>
                                 <span className="spn-number">(2)</span>
                             </li>
                             <li>
-                                <a href="/">Graphic Design</a>
+                                <a >Graphic Design</a>
                                 <span className="spn-number">(2)</span>
                             </li>
                             <li>
-                                <a href="/">MISC</a>
+                                <a >MISC</a>
                                 <span className="spn-number">(2)</span>
                             </li>
                         </ul>
