@@ -1,9 +1,9 @@
 import Head from "next/head";
 import Script from "next/script";
 import Image from "next/image";
-import Navigation from "./components/navigation";
-import Footer from "./components/footer";
-import Portfolios from "./components/portfolios";
+import Navigation from "../components/navigation";
+import Footer from "../components/footer";
+import Portfolios from "../components/portfolios";
 
 const Portfolio = () => {
     return (<>
