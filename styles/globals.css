@@ -180,7 +180,7 @@
 }
 
 #home_logo {
-  padding-left: 177px;
+  margin-left: 160px!important;
 }
 
 #home_ul {
@@ -379,26 +379,6 @@
     width: 100%;
 }
 } */
-
-@media screen and (max-width: 768px) {
-
-  #next-col-6 {
-    width: 100%;
-  }
-}
-
-
-
-@media screen and (max-width: 414px) {
-
-  #second_hero_section {
-    width: 100%;
-  }
-
-  #image_second {
-    width: 100%;
-  }
-}
 
 /* css */
 
@@ -812,7 +792,7 @@ text-align: left;
   position: absolute;
   top: 0;
   left: 0;
-  padding: 60px 20px;
+  /* padding: 60px 20px; */
   border: 1px solid #da3030;
   box-sizing: border-box;
   text-align: center;
@@ -827,14 +807,14 @@ text-align: left;
   transform: rotateY(0)
 }
 
-#card_row{
+/* #card_row{
   justify-content: center;
   display: flex;
   text-align: center;
   align-items: center;
   padding: 57px;
   padding-bottom: 0;
-}
+} */
 
 #hero_portfolio {
   text-decoration: none;
@@ -1432,3 +1412,138 @@ margin-bottom: 20px;
   }
   
   
+
+  /* Media query for responsiveness */
+
+  
+  
+@media screen and (min-width:772px) and (max-width: 1200px)   {
+
+/* #port_row1{
+  position: relative;
+  width: 100%;
+  
+}
+#port_row2{
+  position: relative;
+  width: 100%;
+  
+}
+#port_row3{
+  position: relative;
+  width: 100%;
+  
+} */
+#port_row{
+  width: auto;
+
+}
+.row-ecommerce{
+  justify-content: center;
+  text-align: center;
+}
+#home_logo{
+  margin-left: 40px;
+}
+
+#div-services{
+  width: 100%;
+  padding: 0;
+}
+#img-top{
+  width: 100%;
+  
+}
+.services-tittle{
+  margin-left: 0;
+}
+.card-img-top{
+  margin: 0;
+}
+.services-card{
+  padding: 0;
+}
+}
+
+@media screen and (max-width:770px){
+  #col_sm{
+    width: 100%;
+  }
+  .row-ecommerce{
+    justify-content: center;
+    text-align: center;
+  }
+  #home_logo{
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width:388px){
+  #port_row{
+    width: 100%;
+  }
+  .row-ecommerce{
+    justify-content: center;
+    text-align: center;
+  }
+  #home_logo{
+    margin-left: 40px;
+  }
+  #div-services{
+    width: 100%;
+    padding: 0;
+  }
+  .card-img-top{
+    width: 100%;
+    height: auto;
+    margin: 0
+  }
+  
+}
+  
+
+
+
+
+@media screen and (max-width: 414px) {
+
+  #second_hero_section {
+    width: 100%;
+  }
+
+  #image_second {
+    width: 100%;
+  }
+  #div-services{
+    width: 100%;
+    padding: 0;
+  }
+  .card-img-top{
+    width: 100%;
+    height: auto;
+    margin: 0
+  }
+  .me-auto{
+    margin-left: auto;
+  }
+  #home_logo{
+    margin-left: auto;
+  }
+  #logo_id{
+    margin-left: -130px;
+  }
+}
+
+@media  screen and (min-width:417px) and (max-width:753px){
+  #div-services{
+    width: 100%;
+    
+  }
+  .card-img-top{
+    width: 100%;
+    height: auto;
+    margin: 0
+  }
+}
+  
+

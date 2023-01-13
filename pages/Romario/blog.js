@@ -11,13 +11,14 @@ const Blog = () =>{
           rel="stylesheet"
         />
          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+         <title>Romario - Blog</title>
       </Head>
       <Navigation />
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-8">
+          <div className="col-lg-8">
             <div className="row ">
-              <div className="col-6 " id="cont-1">
+              <div className="col-md-6 " id="cont-1">
                 <div className="blog-post">
                   <div className="blog-post-content">
                     <h5 className="blog-post-titile">
@@ -43,7 +44,7 @@ const Blog = () =>{
                   </div>
                 </div>
               </div>
-              <div className="col-6" id="cont-1">
+              <div className="col-md-6" id="cont-1">
                 <div className="blog-post">
                   <div className="blog-post-content">
                     <h5 className="blog-post-titile">
@@ -63,7 +64,7 @@ const Blog = () =>{
                   </div>
                 </div>
               </div>
-              <div className="col-6 mt-4" id="cont-1">
+              <div className="col-md-6 mt-4" id="cont-1">
                 <div className="blog-post">
                   <div className="blog-post-content">
                     <h5 className="blog-post-titile">
@@ -81,7 +82,7 @@ const Blog = () =>{
                   </div>
                 </div>
               </div>
-              <div className="col-6 mt-4" id="cont-1">
+              <div className="col-md-6 mt-4" id="cont-1">
                 <div className="blog-post">
                   <div className="blog-post-content">
                     <h5 className="blog-post-titile">
@@ -99,7 +100,7 @@ const Blog = () =>{
                   </div>
                 </div>
               </div>
-              <div className="col-6 mt-4" id="cont-1">
+              <div className="col-md-6 mt-4" id="cont-1">
                 <div className="blog-post">
                   <div className="blog-post-content">
                     <h5 className="blog-post-titile">
@@ -117,7 +118,7 @@ const Blog = () =>{
                   </div>
                 </div>
               </div>
-              <div className="col-6 mt-4" id="cont-1">
+              <div className="col-md-6 mt-4" id="cont-1">
                 <div className="blog-post">
                   <div className="blog-post-content">
                     <h5 className="blog-post-titile">

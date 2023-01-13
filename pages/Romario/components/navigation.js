@@ -18,7 +18,7 @@ const Navigation = () => {
         </Head>
         <nav className="navbar navbar-expand-lg " id="home_nav">
             <div className="container-fluid">
-                <a className="navbar-brand me-auto " href="#" id="home_logo"><Image src="/images/logo.png" width={70} height={70} alt="logo" /></a>
+                <a className="navbar-brand me-auto " href="#" id="home_logo"><Image src="/images/logo.png" width={70} height={70} alt="logo" id="logo_id" /></a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>

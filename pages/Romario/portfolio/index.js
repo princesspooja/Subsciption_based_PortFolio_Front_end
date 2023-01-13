@@ -19,7 +19,7 @@ const Portfolio = () => {
         <section className="hero-ecommerce">
             <div className="container-ecommerce">
                 <div className="row-ecommerce">
-                    <div className="col-lg-10">
+                    <div className="col-lg-12">
                         <div className="page-title">
                             <h1 className="div_title">Portfolios</h1>
                             <ul className="breadcrumbs-link">
@@ -35,8 +35,10 @@ const Portfolio = () => {
                     </div>
                 </div>
             </div>
+           
         </section>
         <Portfolios />
+        
         <Footer />
 
 

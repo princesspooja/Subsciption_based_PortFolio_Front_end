@@ -20,7 +20,7 @@ const Index = () => {
         <section className="main_typer">
             <div className="container" id="hero_container">
                 <div className="row" id="hero_row">
-                    <div className="col-lg-5 col-md-6">
+                    <div className="col-lg-6 col-md-6 ">
                         <div className="first_hero">
                             <span className="hero_span">Hi I,m,</span>
                             <h1 className="hero_h1">Romario Sara</h1>
@@ -39,7 +39,7 @@ const Index = () => {
                             <a href="" id="hero_template">Hire me</a>
                         </div>
                     </div>
-                    <div className="col-lg-7 col-md-6 col-sm-9" id="next-col-6">
+                    <div className="col-lg-6 col-md-6 col-sm-6" id="next-col-6">
                         <motion.div
                             animate={{ rotate: [0, 0, 0, 0], x: [0, 0, 0, 0], y: [5, 1, 1, 5] }}
                             transition={{ repeat: Infinity, duration: 1 }}
@@ -59,7 +59,7 @@ const Index = () => {
             <div className="container" id="my-first">
                 <div className="row first-row">
 
-                    <div className="col-sm-6 first-row-first">
+                    <div className="col-lg-6 col-md-6 first-row-first">
                         <motion.div
                             animate={{ rotate: [0, 0, 0, 0], x: [0, 0, 0, 0], y: [5, 1, 1, 5] }}
                             transition={{ repeat: Infinity, duration: 1 }}
@@ -72,7 +72,7 @@ const Index = () => {
                         </motion.div>
 
                     </div>
-                    <div className="col-sm-6 second-row">
+                    <div className="col-lg-6 col-md-6 col-sm-6 second-row">
                         <div className="about_div">
                             <div className="about_heading mb-30">
                                 <span className="lineTag">My Resume</span>
@@ -100,7 +100,7 @@ const Index = () => {
         <div className="header_section">
             <div className="container" id="my-first">
                 <div className="row first-row">
-                    <div className="col-sm-6 first-row-skills">
+                    <div className="col-lg-6  first-row-skills">
                         <div className="about_skil">
                             <div className="about_heading mb-30">
                                 <span className="lineTag">My Resume</span>
@@ -161,7 +161,7 @@ const Index = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-sm-6 second-row">
+                    <div className="col-lg-6  second-row">
                         <motion.div
                             animate={{ rotate: [0, 0, 0, 0], x: [0, 0, 0, 0], y: [5, 1, 1, 5] }}
                             transition={{ repeat: Infinity, duration: 1 }}
