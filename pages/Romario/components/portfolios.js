@@ -7,7 +7,7 @@ const Portfolios = () =>{
     <div className="container portfolio-container">
     <div className="row" id="portfolio-row">
                 <div className="portfolio-button col-sm-10">
-                    <ul class="portfolio-button-a">
+                    <ul className="portfolio-button-a">
                         <li><a>All</a></li>
                         <li><a>Web Development</a></li>
                         <li><a>Graphic Design</a></li>

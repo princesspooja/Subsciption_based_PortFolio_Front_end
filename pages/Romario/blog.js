@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
+import Navigation from "./components/navigation";
+import Footer from "./components/footer";
 const Blog = () =>{
     return(<>
     
@@ -10,6 +12,7 @@ const Blog = () =>{
         />
          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
       </Head>
+      <Navigation />
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-8">
@@ -208,6 +211,8 @@ const Blog = () =>{
         </div>
       </div>
       </div>
+
+      <Footer />
     </>)
 }
 

@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Head from "next/head";
+import Navigation from "./components/navigation";
+import Footer from "./components/footer";
 const Contact = () => {
   return (
     <>
@@ -9,6 +11,7 @@ const Contact = () => {
           rel="stylesheet"
         />
       </Head>
+      <Navigation />
       <div className="container">
         <div className="heading">
           <span id="contact">contact</span>
@@ -44,6 +47,7 @@ const Contact = () => {
           </div>
         </form>
       </div>
+      <Footer />
     </>
   );
 };
