@@ -15,6 +15,26 @@ const Portfolio = () => {
 
         </Head>
         <Navigation />
+        <section className="hero-ecommerce">
+            <div className="container-ecommerce">
+                <div className="row-ecommerce">
+                    <div className="col-lg-10">
+                        <div className="page-title">
+                            <h1 className="div_title">Portfolios</h1>
+                            <ul className="breadcrumbs-link">
+                                <li>
+
+                                    <a>Home</a>
+
+                                </li>
+                                <li><i className="fa fa-chevron-right"></i></li>
+                                <li>Portfolios</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <Portfolios />
         <Footer />
 

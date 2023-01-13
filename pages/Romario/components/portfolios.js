@@ -3,8 +3,18 @@ import Link from "next/link";
 
 const Portfolios = () =>{
     return(<>
-
-    <div className="container">
+    
+    <div className="container portfolio-container">
+    <div className="row" id="portfolio-row">
+                <div className="portfolio-button col-sm-10">
+                    <ul class="portfolio-button-a">
+                        <li><a>All</a></li>
+                        <li><a>Web Development</a></li>
+                        <li><a>Graphic Design</a></li>
+                        <li><a>MISC</a></li>
+                    </ul>
+                </div>
+            </div>
             <div className="row" id="card_row">
                 <div className="col-sm">
                     <div className="box">

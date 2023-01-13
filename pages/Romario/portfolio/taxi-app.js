@@ -38,7 +38,7 @@ const Logo_Design = () => {
                         <div className="carousel-inner">
                             <div className="carousel-item active">
                                 {/* <img src="/cr1.jpg" className="d-block w-100" alt="..."/> */}
-                                <Image src="/images/portfolio/cr1.jpg" width={770} height={462} alt="carouser-1" />
+                                <Image src="/images/portfolio/cr3.jpg" width={770} height={462} alt="carouser-1" />
                                 <div className="carousel-caption d-none d-md-block">
                                 </div>
                             </div>
