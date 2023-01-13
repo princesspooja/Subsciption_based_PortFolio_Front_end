@@ -9,6 +9,10 @@ import Portfolios from "./components/portfolios";
 
 const Index = () => {
     return (<>
+    <Head>
+    <title>Romorio - Home</title>
+    </Head>
+
 
         <Navigation />
 

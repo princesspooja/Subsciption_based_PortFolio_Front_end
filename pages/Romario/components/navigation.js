@@ -14,7 +14,7 @@ const Navigation = () => {
             <link
                 rel="stylesheet"
                 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-            <title>Romorio - Home</title>
+          
         </Head>
         <nav className="navbar navbar-expand-lg " id="home_nav">
             <div className="container-fluid">
