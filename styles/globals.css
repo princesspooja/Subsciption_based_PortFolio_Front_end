@@ -1290,6 +1290,7 @@ margin-bottom: 20px;
   .blog-image {
     border-radius: 8px; 
     max-width: 100%;
+    width: 100%;
   }
   
   .sidebar-area{

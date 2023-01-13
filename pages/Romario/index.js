@@ -6,6 +6,7 @@ import Navigation from "./components/navigation";
 import Footer from "./components/footer";
 import { motion } from 'framer-motion';
 import Portfolios from "./components/portfolios";
+import Services_home from "./components/services_home";
 
 const Index = () => {
     return (<>
@@ -177,6 +178,7 @@ const Index = () => {
                 </div>
             </div>
         </div>
+        <Services_home />
 
         <section className="job_experience" >
             <div className="container">

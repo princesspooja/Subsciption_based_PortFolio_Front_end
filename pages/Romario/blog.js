@@ -35,8 +35,8 @@ const Blog = () =>{
                             <span>July 26, 2021</span>
                         </a>
                       </li>
-                    </ul>
-                      <Image src="/blogs/image1.jpg" width="300" height="250" className="blog-image"/>
+                    </ul> 
+                      <Image src="/blogs/image1.jpg" width="300" height="250" className="blog-image" alt="images"/>
                   </div>
                 </div>
               </div>
@@ -56,7 +56,7 @@ const Blog = () =>{
                         <a><i className="fas fa-calendar-alt"> </i><span>July 26, 2021</span></a>
                       </li>
                     </ul>
-                      <Image src="/blogs/image2.jpg" width="300" height="250"  className="blog-image" />
+                      <Image src="/blogs/image2.jpg" width="300" height="250"  className="blog-image" alt="images"/>
                   </div>
                 </div>
               </div>
@@ -74,7 +74,7 @@ const Blog = () =>{
                         <a><i className="fas fa-calendar-alt"></i><span>July 26, 2021</span></a>
                       </li>
                     </ul>
-                      <Image src="/blogs/image3.jpg" width="300" height="250" className="blog-image"/>
+                      <Image src="/blogs/image3.jpg" width="300" height="250" className="blog-image" alt="image3"/>
                   </div>
                 </div>
               </div>
@@ -92,7 +92,7 @@ const Blog = () =>{
                         <a><i className="fas fa-calendar-alt"></i><span>July 26, 2021</span></a>
                       </li>
                     </ul>
-                      <Image src="/blogs/image1.jpg" width="300" height="250" className="blog-image"/>
+                      <Image src="/blogs/image1.jpg" width="300" height="250" className="blog-image" alt="image1"/>
                   </div>
                 </div>
               </div>
@@ -110,7 +110,7 @@ const Blog = () =>{
                         <a><i className="fas fa-calendar-alt"></i><span>by Romario</span></a>
                       </li>
                     </ul>
-                      <Image src="/blogs/image2.jpg" width="300" height="250" className="blog-image"/>
+                      <Image src="/blogs/image2.jpg" width="300" height="250" className="blog-image" alt="image2"/>
                   </div>
                 </div>
               </div>
@@ -128,7 +128,7 @@ const Blog = () =>{
                         <a><i className="fas fa-calendar-alt"></i><span>July 26, 2021</span></a>
                       </li>
                     </ul>
-                      <Image src="/blogs/image3.jpg" width="300" height="250" className="blog-image"/>
+                      <Image src="/blogs/image3.jpg" width="300" height="250" className="blog-image" alt="image3"/>
                   </div>
                 </div>
               </div>
@@ -141,7 +141,7 @@ const Blog = () =>{
               <div className="form-group">
               <input type="text" placeholder="Search your keyword..." className="sidebar-form_control"/>
               <button type="submit" className="search-btn">
-              <i class="fa fa-search" aria-hidden="true"></i>
+              <i className="fa fa-search" aria-hidden="true"></i>
               </button>
               </div>
             </form>
@@ -150,19 +150,19 @@ const Blog = () =>{
             <h4 className="sidebar-catogory-title">categories</h4>
             <ul className="catogory-link">
               <li className="active-li">
-                <a href="/">All</a>
+                <a >All</a>
                 <span className="spn-number">(6)</span>
               </li>
               <li>
-                <a href="/">Tech</a>
+                <a >Tech</a>
                 <span className="spn-number">(2)</span>
               </li>
               <li>
-                <a href="/">Lifestyle</a>
+                <a >Lifestyle</a>
                 <span className="spn-number">(2)</span>
               </li>
               <li>
-                <a href="/">MISC</a>
+                <a >MISC</a>
                 <span className="spn-number">(2)</span>
               </li>
             </ul>
@@ -171,7 +171,7 @@ const Blog = () =>{
             <h4 className="sidebar-post-title">Latest Blogs</h4>
             <ul className="sidebar-post-list">
               <li className="sidebar-post-content">
-              <Image src="/blogs/image3.jpg" width="300" height="250" className="post-image"/>
+              <Image src="/blogs/image3.jpg" width="300" height="250" className="post-image" alt="image3"/>
               <div className="sidebar-post-title-date">
                 <h6>Richard McClintock, a Latin pr...</h6>
                 <span className="post-on">
@@ -182,7 +182,7 @@ const Blog = () =>{
               </div>
               </li>
               <li className="sidebar-post-content">
-              <Image src="/blogs/image2.jpg" width="300" height="250" className="post-image"/>
+              <Image src="/blogs/image2.jpg" width="300" height="250" className="post-image" alt="image2"/>
               <div className="sidebar-post-title-date">
                 <h6>Richard McClintock, a Latin pr...</h6>
                 <span className="post-on">
@@ -193,7 +193,7 @@ const Blog = () =>{
               </div>
               </li>
               <li className="sidebar-post-content">
-              <Image src="/blogs/image1.jpg" width="300" height="250" className="post-image"/>
+              <Image src="/blogs/image1.jpg" width="300" height="250" className="post-image" alt="image1"/>
               <div className="sidebar-post-title-date">
                 <h6>Richard McClintock, a Latin pr...</h6>
                 <span className="post-on">
