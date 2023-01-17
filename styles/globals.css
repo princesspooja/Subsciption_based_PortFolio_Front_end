@@ -360,11 +360,11 @@
   text-align: right !important;
 }
 
-/* #image_second {
-  transition: transform 1s ease-in-out;
+#image_second {
+  width: 100%;
 }
 
-.second_hero_section:hover #image_second {
+/* .second_hero_section:hover #image_second {
   transform: translateY(10%);
 } */
 

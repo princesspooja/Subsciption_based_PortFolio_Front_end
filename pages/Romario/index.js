@@ -39,7 +39,7 @@ const Index = () => {
                             <a href="" id="hero_template">Hire me</a>
                         </div>
                     </div>
-                    <div className="col-lg-6 col-md-6 col-sm-6" id="next-col-6">
+                    <div className="col-lg-6 col-md-6 " id="next-col-6">
                         <motion.div
                             animate={{ rotate: [0, 0, 0, 0], x: [0, 0, 0, 0], y: [5, 1, 1, 5] }}
                             transition={{ repeat: Infinity, duration: 1 }}
@@ -161,7 +161,7 @@ const Index = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-6  second-row">
+                    <div className="col-lg-6 col-md-6  second-row">
                         <motion.div
                             animate={{ rotate: [0, 0, 0, 0], x: [0, 0, 0, 0], y: [5, 1, 1, 5] }}
                             transition={{ repeat: Infinity, duration: 1 }}
