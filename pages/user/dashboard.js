@@ -51,7 +51,7 @@ const Dashboard = () => {
                         </div>
                         <a data-bs-toggle="collapse" href="#collapseExamp" role="button" aria-expanded="false" aria-controls="collapseExample"><div className="info_daata">
                             <span>Romario Sara</span>
-                            <p>Romario</p>
+                            <p>Romario shri</p>
                         </div>
                         </a>
                         <span className="paret_sara"></span>
