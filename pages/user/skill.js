@@ -1,9 +1,13 @@
+
+
+
 import Script from "next/script";
 import Head from "next/head";
 import Image from "next/image";
+import Table from "./dashboardcomponents/table";
 import Link from "next/link";
 
-const Dashboard = () => {
+const Skill = () => {
     return (<>
     <Head>
     <link
@@ -71,7 +75,7 @@ const Dashboard = () => {
                         <ul className="nav">
                             <div className="row mb-2 row_data" >
                                 <li className="nav-items active">
-                                    <a href="" className="a-active"><i className="fa fa-palette a-active"></i><p>Dashboard</p></a>
+                                   <Link href="/user/dashboard" legacyBehavior><a className="a-active"><i className="fa fa-palette a-active"></i><p>Dashboard</p></a></Link>
                                 </li>
                                 <li className="nav-items">
                                     <a href="" className=""><i className="fa fa-user-circle"></i><p>Edit Profile</p></a>
@@ -113,7 +117,7 @@ const Dashboard = () => {
                                     <a href="" className=""><i className="fa fa-toggle-on"></i><p>Preference</p></a>
                                 </li>
                                 <li className="nav-items ">
-                                    <Link href="/user/skill" legacyBehavior ><a className=""><i className="fa fa-pencil-ruler"></i><p>Skills</p></a></Link>
+                                <Link href="/user/skill" legacyBehavior><a className=""><i className="fa fa-pencil-ruler"></i><p>Skills</p></a></Link>
                                 </li>
                                 <li className="nav-items ">
                                     <a href="" className=""><i className="fa fa-hands"></i><p>Services</p></a>
@@ -225,79 +229,7 @@ const Dashboard = () => {
     <div className="main_panel">
       <div className="main_contents">
         <div className="pageinner_data">
-          <div className="card-body">
-            <div className="container">
-                <div className="row">
-                  <div className="col-sm-4">
-                    One of three columns
-                  </div>
-                  <div className="col-sm-8">
-                    <div className="dataset">
-                      <div className="karan">
-                    <div className="table-responsive">
-                        <table className="table table-light table-striped  mt-3 " id="shri-table">
-                            <thead>
-                              <tr>
-                                <th scope="col">Image</th>
-                                <th scope="col">UserName</th>
-                                <th scope="col">Action</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td className="td-data"><a ><button type="button" className="btn btn-primary"><i className="fa fa-eye"></i><span>View</span></button></a>  <a><button type="button" className="btn btn-danger"><span>Unfollow</span> </button></a></td>
-                              </tr>
-                              <tr>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td className="td-data"><a ><button type="button" className="btn btn-primary"><i className="fa fa-eye"></i><span>View</span></button></a>  <a><button type="button" className="btn btn-danger"><span>Unfollow</span> </button></a></td>
-                              </tr>
-                              <tr>
-                                <td >Larry the Bird</td>
-                                <td>shriniwas</td>
-                                <td className="td-data"><a ><button type="button" className="btn btn-primary"><i className="fa fa-eye"></i>View</button></a>  <a><button type="button" className="btn btn-danger"><span>Unfollow</span> </button></a></td>
-                    
-                              </tr>
-                              <tr>
-                                <td >Larry the Bird</td>
-                                <td>shriniwas</td>
-                                <td className="td-data"><a ><button type="button" className="btn btn-primary"><i className="fa fa-eye"></i>View</button></a>  <a><button type="button" className="btn btn-danger"><span>Unfollow</span> </button></a></td>
-                    
-                              </tr>
-                              <tr>
-                                <td >Larry the Bird</td>
-                                <td>shriniwas</td>
-                                <td className="td-data"><a ><button type="button" className="btn btn-primary"><i className="fa fa-eye"></i>View</button></a>  <a><button type="button" className="btn btn-danger"><span>Unfollow</span> </button></a></td>
-                    
-                              </tr>
-                              <tr>
-                                <td >Larry the Bird</td>
-                                <td>shriniwas</td>
-                                <td className="td-data"><a ><button type="button" className="btn btn-primary"><i className="fa fa-eye"></i>View</button></a>  <a><button type="button" className="btn btn-danger"><span>Unfollow</span> </button></a></td>
-                    
-                              </tr>
-                              <tr>
-                                <td >Larry the Bird</td>
-                                <td>shriniwas</td>
-                                <td className="td-data"><a ><button type="button" className="btn btn-primary"><i className="fa fa-eye"></i>View</button></a>  <a><button type="button" className="btn btn-danger"><span>Unfollow</span> </button></a></td>
-                              </tr>
-                              <tr>
-                                <td >Larry the Bird</td>
-                                <td>shriniwas</td>
-                                <td className="td-data"><a ><button type="button" className="btn btn-primary"><i className="fa fa-eye"></i>View</button></a>  <a><button type="button" className="btn btn-danger"><span>Unfollow</span> </button></a></td>
-                    
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
-                  </div>
-                </div>
-                </div>
-              </div>
-              </div>
+            <Table />
 
 
 
@@ -316,4 +248,4 @@ const Dashboard = () => {
     </>)
 }
 
-export default Dashboard
+export default Skill
