@@ -1,11 +1,13 @@
+
+
+
 import Script from "next/script";
 import Head from "next/head";
 import Image from "next/image";
-import Dash from "./dashboardComponent/dash";
-
+import Table from "./dashboardcomponents/table";
 import Link from "next/link";
 
-const Dashboard = () => {
+const Skill = () => {
     return (<>
     <Head>
     <link
@@ -73,7 +75,7 @@ const Dashboard = () => {
                         <ul className="nav">
                             <div className="row mb-2 row_data" >
                                 <li className="nav-items active">
-                                    <a href="" className="a-active"><i className="fa fa-palette a-active"></i><p>Dashboard</p></a>
+                                   <Link href="/user/dashboard" legacyBehavior><a className="a-active"><i className="fa fa-palette a-active"></i><p>Dashboard</p></a></Link>
                                 </li>
                                 <li className="nav-items">
                                     <a href="" className=""><i className="fa fa-user-circle"></i><p>Edit Profile</p></a>
@@ -99,9 +101,9 @@ const Dashboard = () => {
                                 <div className="collapse  div-collapse" id="collapseExamples" >
                                     <ul className="nav_collapse">
                                       <li>Themes</li>
-                                     <Link href="/user/setting/favicon" legacyBehavior><li><a>Fevicon</a></li></Link>
-                                      <Link href="/user/setting/logo" legacyBehavior><li><a>Logo</a></li></Link>
-                                      <Link href="/user/setting/preloader" legacyBehavior><li><a>Preloader</a></li></Link>
+                                      <li>Fevicon</li>
+                                      <li>Logo</li>
+                                      <li>Preloader</li>
                                       <li>Color Setting</li>
                                       <li>Social Links</li>
                                       <li>SEO Information</li>
@@ -115,7 +117,7 @@ const Dashboard = () => {
                                     <a href="" className=""><i className="fa fa-toggle-on"></i><p>Preference</p></a>
                                 </li>
                                 <li className="nav-items ">
-                                    <Link href="/user/skill" legacyBehavior ><a className=""><i className="fa fa-pencil-ruler"></i><p>Skills</p></a></Link>
+                                <Link href="/user/skill" legacyBehavior><a className=""><i className="fa fa-pencil-ruler"></i><p>Skills</p></a></Link>
                                 </li>
                                 <li className="nav-items ">
                                     <a href="" className=""><i className="fa fa-hands"></i><p>Services</p></a>
@@ -227,14 +229,7 @@ const Dashboard = () => {
     <div className="main_panel">
       <div className="main_contents">
         <div className="pageinner_data">
-          <div className="card-body">
-            <Dash />
-
-
-
-
-
-              </div>
+            <Table />
 
 
 
@@ -253,4 +248,4 @@ const Dashboard = () => {
     </>)
 }
 
-export default Dashboard;
+export default Skill
