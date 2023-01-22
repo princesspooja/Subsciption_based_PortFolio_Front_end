@@ -1,10 +1,8 @@
 import Script from "next/script";
 import Head from "next/head";
 import Image from "next/image";
-import Dash from "./dashboardComponent/dash";
-import Link from "next/link";
-
-const Dashboard = () => {
+import Setlo from "../dashboardComponent/setlo";
+const Logo = () => {
     return (<>
     <Head>
     <link
@@ -98,9 +96,9 @@ const Dashboard = () => {
                                 <div className="collapse  div-collapse" id="collapseExamples" >
                                     <ul className="nav_collapse">
                                       <li>Themes</li>
-                                     <Link href="/user/setting/favicon" legacyBehavior><li><a>Fevicon</a></li></Link>
-                                      <Link href="/user/setting/logo" legacyBehavior><li><a>Logo</a></li></Link>
-                                      <Link href="/user/setting/preloader" legacyBehavior><li><a>Preloader</a></li></Link>
+                                      <li>Fevicon</li>
+                                      <li>Logo</li>
+                                      <li>Preloader</li>
                                       <li>Color Setting</li>
                                       <li>Social Links</li>
                                       <li>SEO Information</li>
@@ -227,7 +225,7 @@ const Dashboard = () => {
       <div className="main_contents">
         <div className="pageinner_data">
           <div className="card-body">
-            <Dash />
+            <Setlo />
 
 
 
@@ -252,4 +250,4 @@ const Dashboard = () => {
     </>)
 }
 
-export default Dashboard;
+export default Logo;
