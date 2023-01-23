@@ -1,14 +1,9 @@
-
 import Script from "next/script";
 import Head from "next/head";
 import Image from "next/image";
-import Table from "./dashboardcomponents/table";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import Footer from "./dashboardComponent/footered";
+import Educations from "./dashboardComponent/educations";
 
-const Skill = () => {
-  const router = useRouter();
+const educations = () => {
     return (<>
     <Head>
     <link
@@ -76,7 +71,7 @@ const Skill = () => {
                         <ul className="nav">
                             <div className="row mb-2 row_data" >
                                 <li className="nav-items active">
-                                   <Link href="/user/dashboard" legacyBehavior><a className="a-active"><i className="fa fa-palette a-active"></i><p>Dashboard</p></a></Link>
+                                    <a href="" className="a-active"><i className="fa fa-palette a-active"></i><p>Dashboard</p></a>
                                 </li>
                                 <li className="nav-items">
                                     <a href="" className=""><i className="fa fa-user-circle"></i><p>Edit Profile</p></a>
@@ -117,8 +112,8 @@ const Skill = () => {
                                 <li className="nav-items ">
                                     <a href="" className=""><i className="fa fa-toggle-on"></i><p>Preference</p></a>
                                 </li>
-                                <li className={router.asPath == '/user/skill' ? 'activated' : 'nav-items' }>
-                                <Link href="/user/skill" legacyBehavior><a className=""><i className="fa fa-pencil-ruler"></i><p>Skills</p></a></Link>
+                                <li className="nav-items ">
+                                    <a href="" className=""><i className="fa fa-pencil-ruler"></i><p>Skills</p></a>
                                 </li>
                                 <li className="nav-items ">
                                     <a href="" className=""><i className="fa fa-hands"></i><p>Services</p></a>
@@ -230,11 +225,15 @@ const Skill = () => {
     <div className="main_panel">
       <div className="main_contents">
         <div className="pageinner_data">
-            <Table />
+              <Educations />
+          <div className="card-body">
+              </div>
+
+
+
         </div>
 
       </div>
-      <Footer />
 
     </div>
   </div>
@@ -247,4 +246,4 @@ const Skill = () => {
     </>)
 }
 
-export default Skill
+export default educations
