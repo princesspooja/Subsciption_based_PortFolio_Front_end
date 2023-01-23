@@ -1,7 +1,12 @@
+/* .pageinner_data{
+    padding-left: 15px;
+    padding-top: 30px;
+} */
 .home-page-inner{
-    padding: 24px 32px;
+    padding: 24px 0px;
     background-color: #FFF9FB;
     margin-bottom: 60px;
+    padding-left: 10px;
     
 }
 .home-page-header{
@@ -69,16 +74,18 @@
     margin-right: -15px;
     margin-left: -15px;
 }
-.form-select{
+/* .form-select{
     margin-top: 15px;
     padding: 1.25rem;
     color: #575962;
     border-color: #575962;
     border-radius: 4px;
-}
+} */
 #select-text{
     width: 200px;
     padding: 5px;
+    margin-top: 18px;
+    
 
 }
 /* .line{
@@ -169,7 +176,7 @@ textarea.form-control {
 
 .home-card-footer{
     line-height: 30px;
-    border-top: 1px solid #ebecec !important;
+    border-top: 1px solid #ebecec ;
     font-size: 13px;
     padding: 0.75rem 1.25rem;
 }
