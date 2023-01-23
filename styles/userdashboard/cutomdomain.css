@@ -71,12 +71,12 @@
 .domain-card-body{
     padding: 1.25rem;
 }
-.row{
+/* .row{
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
-}
+} */
 .domain-table-responsive{
     text-decoration: none;
     border: none;

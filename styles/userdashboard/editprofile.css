@@ -62,12 +62,12 @@
 .edit-card-body{
     padding: 1.25rem;
 }
-.row{
+/* .row{
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
-}
+} */
 .form-group{
     margin-bottom: 0;
     padding: 10px;
