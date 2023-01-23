@@ -1,14 +1,9 @@
 import Script from "next/script";
 import Head from "next/head";
 import Image from "next/image";
-import Dash from "./dashboardComponent/dash";
-import { useRouter } from "next/router";
+import Icon from "../dashboardComponent/icon";
 
-import Link from "next/link";
-
-const Dashboard = () => {
-
-  const router = useRouter();
+const Favicon = () => {
     return (<>
     <Head>
     <link
@@ -75,11 +70,11 @@ const Dashboard = () => {
                     <div className="users">
                         <ul className="nav">
                             <div className="row mb-2 row_data" >
-                                <li className={router.asPath == '/user/dashboard' ? 'activated' : 'nav-items' }>
-                                   <Link href="/user/dashboard" legacyBehavior><a href="" className="a-active"><i className="fa fa-palette a-active"></i><p>Dashboard</p></a></Link> 
+                                <li className="nav-items active">
+                                    <a href="" className="a-active"><i className="fa fa-palette a-active"></i><p>Dashboard</p></a>
                                 </li>
-                                <li className={router.asPath == '/user/editprofile' ? 'activated' : 'nav-items' } >
-                                   <Link href="/user/editprofile" legacyBehavior><a className=""><i className="fa fa-user-circle"></i><p>Edit Profile</p></a></Link> 
+                                <li className="nav-items">
+                                    <a href="" className=""><i className="fa fa-user-circle"></i><p>Edit Profile</p></a>
                                 </li>
                                 <li className="nav-items ">
                                     {/* <!-- <a href="" className=""><i className="fa fa-link"></i><p>Domains & URLs</p></a> */}
@@ -90,11 +85,11 @@ const Dashboard = () => {
                                 </li>
                                 <div className="collapse  div-collapse" id="collapseExample" >
                                     <ul className="nav_collapse">
-                                    <Link href="/user/customdomain" legacyBehavior><li ><a>Custom Domain</a></li></Link>
+                                      <li>Custom Domain</li>
                                       <li>Sub-Domain</li>
                                     </ul>
                                   </div>
-                                <li className={router.asPath == ('/user/setting/favicon' || '/user/setting/logo' || '/user/setting/preloader') ? 'activated' : 'nav-items' }>
+                                <li className="nav-items ">
                                     <a data-bs-toggle="collapse" href="#collapseExamples" role="button" aria-expanded="false" aria-controls="collapseExample">
                                         <i className="fa fa-home"></i><p>Settings</p><span className="paret_setting"></span>
                                     </a>
@@ -102,9 +97,9 @@ const Dashboard = () => {
                                 <div className="collapse  div-collapse" id="collapseExamples" >
                                     <ul className="nav_collapse">
                                       <li>Themes</li>
-                                     <Link href="/user/setting/favicon" legacyBehavior><li><a>Fevicon</a></li></Link>
-                                      <Link href="/user/setting/logo" legacyBehavior><li><a>Logo</a></li></Link>
-                                      <Link href="/user/setting/preloader" legacyBehavior><li><a>Preloader</a></li></Link>
+                                      <li>Fevicon</li>
+                                      <li>Logo</li>
+                                      <li>Preloader</li>
                                       <li>Color Setting</li>
                                       <li>Social Links</li>
                                       <li>SEO Information</li>
@@ -112,13 +107,13 @@ const Dashboard = () => {
                                     </ul>
                                   </div>
                                 <li className="nav-items ">
-                                    <Link href="/user/homesection" legacyBehavior><a href="" className=""><i className="fa fa-home"></i><p>Home Sections</p></a></Link>
+                                    <a href="" className=""><i className="fa fa-home"></i><p>Home Sections</p></a>
                                 </li>
                                 <li className="nav-items ">
                                     <a href="" className=""><i className="fa fa-toggle-on"></i><p>Preference</p></a>
                                 </li>
-                                <li className={router.asPath == '/user/skill' ? 'activated' : 'nav-items' }>
-                                    <Link href="/user/skill" legacyBehavior ><a className=""><i className="fa fa-pencil-ruler"></i><p>Skills</p></a></Link>
+                                <li className="nav-items ">
+                                    <a href="" className=""><i className="fa fa-pencil-ruler"></i><p>Skills</p></a>
                                 </li>
                                 <li className="nav-items ">
                                     <a href="" className=""><i className="fa fa-hands"></i><p>Services</p></a>
@@ -229,17 +224,15 @@ const Dashboard = () => {
     </div>
     <div className="main_panel">
       <div className="main_contents">
-        <div className="pageinner_datas">
-          <div className="dash_dash">
-          
-            <Dash />
-            </div>
+        <div className="pageinner_data">
+          <div className="card-body">
+            <Icon />
 
 
 
 
 
-              
+              </div>
 
 
 
@@ -258,4 +251,4 @@ const Dashboard = () => {
     </>)
 }
 
-export default Dashboard;
+export default Favicon;

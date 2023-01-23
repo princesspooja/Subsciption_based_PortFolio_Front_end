@@ -1,6 +1,7 @@
 import Head from "next/head";
+import Script from "next/script";
 
-const Table = ()=>{
+const Shri = ()=>{
     return(<>
         <Head>
         <link
@@ -152,8 +153,10 @@ const Table = ()=>{
   </div>
 </form>
 </div>
+<Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" />
+
     </>)
 }
 
 
-export default Table;
+export default Shri;
