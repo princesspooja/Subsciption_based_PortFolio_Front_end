@@ -16,3 +16,9 @@
     background-color: #dc3545;
     border-color: #dc3545;
 }
+
+.ql-toolbar.ql-snow {
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    padding: 8px;
+  }
