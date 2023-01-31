@@ -1,13 +1,14 @@
 
-
-
 import Script from "next/script";
 import Head from "next/head";
 import Image from "next/image";
 import Table from "./dashboardcomponents/table";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import Footer from "./dashboardComponent/footered";
 
 const Skill = () => {
+  const router = useRouter();
     return (<>
     <Head>
     <link
@@ -116,7 +117,7 @@ const Skill = () => {
                                 <li className="nav-items ">
                                     <a href="" className=""><i className="fa fa-toggle-on"></i><p>Preference</p></a>
                                 </li>
-                                <li className="nav-items ">
+                                <li className={router.asPath == '/user/skill' ? 'activated' : 'nav-items' }>
                                 <Link href="/user/skill" legacyBehavior><a className=""><i className="fa fa-pencil-ruler"></i><p>Skills</p></a></Link>
                                 </li>
                                 <li className="nav-items ">
@@ -230,12 +231,10 @@ const Skill = () => {
       <div className="main_contents">
         <div className="pageinner_data">
             <Table />
-
-
-
         </div>
 
       </div>
+      <Footer />
 
     </div>
   </div>

@@ -5,6 +5,7 @@ import '../styles/userdashboard/cutomdomain.css'
 import '../styles/userdashboard/homesection.css'
 import '../styles/userdashboard/favicon.css'
 import '../styles/userdashboard/table.css'
+import '../styles/userdashboard/services.css'
 
 
 

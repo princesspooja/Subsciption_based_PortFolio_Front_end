@@ -68,6 +68,11 @@
     text-emphasis: none;
     justify-content: center;
 }
+.nav .activated {
+    display: flex;
+    text-emphasis: none;
+    justify-content: center;
+}
 
 .nav-items a {
     display: flex;
@@ -81,6 +86,19 @@
     margin-bottom: 3px;
     text-decoration: none;
 }
+.activated a {
+    display: flex;
+    align-items: center;
+    color: #575962;
+    padding: 7px 0px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 3px;
+    text-decoration: none;
+}
+
 
 .nav-items a i {
     color: #8d9498;
@@ -94,15 +112,28 @@
 
 
 }
+.activated a i {
+    color: #8d9498;
+    margin-right: 15px;
+    width: 25px;
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+    font-size: 18px;
+    line-height: 30px;
 
-.active {
+
+}
+
+.activated {
     background-color: #1572E8;
     border: 1px solid;
     border-radius: 6px;
     color: white;
-    box-shadow: 4px 4px 10px rgba(58, 55, 65, 0.10);
+    box-shadow: 4px 4px 10px rgba(58, 55, 65, 0.1);
 
 }
+
 
 .nav-items:hover {
     font-weight: 7900;
@@ -122,6 +153,17 @@
     font-weight: 500;
     line-height: 1.82;
     word-break: break-word;
+    
+}
+.activated a p {
+    font-size: 14px;
+    margin-bottom: 0px;
+    margin-right: 5px;
+    white-space: nowrap;
+    font-weight: 500;
+    line-height: 1.82;
+    word-break: break-word;
+    color: #fff;
 }
 
 
@@ -338,7 +380,7 @@
 /* main pannel css */
 .main_panel {
     position: relative;
-    width: calc(100% - 250px);
+    width: calc(100% - 265px);
     height: 100vh;
     min-height: 100%;
     float: right;
@@ -381,9 +423,11 @@
     margin-right: 0px;
     border: 0px;
     background-color: #ffffff;
-    margin-bottom: 45px;
+    margin-bottom: -34px;
     margin-left: 0px;
     cursor: pointer;
+    margin-top: 0;
+    padding: 21px;
 }
 
 .icon-big {
@@ -538,8 +582,14 @@
     width: 100%;
     
 }
-.container-fluid{
-    display: flex;
+
+.pageinner_datas{
+
+    width: 100%;
+
+}
+.container-fluids{
+    /* display: flex; */
     align-items: center;
     width: 100%;
     padding-right: 15px;
@@ -547,13 +597,13 @@
     margin-right: auto;
     margin-left: auto;
 }
-.setting-footer{
+
+/* .setting-footer{
     margin-left: auto!important;
     margin-right: auto!important;
-}
+} */
 
 
-=======
 .pageinner_data{
     padding-left: 40px;
     padding-right: 40px;
