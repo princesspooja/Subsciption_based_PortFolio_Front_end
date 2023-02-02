@@ -38,8 +38,8 @@ const Slider = () =>{
                 <li className={router.asPath == '/user/dashboard' ? 'activated' : 'nav-items'}>
                   <Link href="/user/dashboard" legacyBehavior><a href="" className="a-active"><i className="fa fa-palette a-active"></i><p>Dashboard</p></a></Link>
                 </li>
-                <li className={router.asPath == '/user/editprofile' ? 'activated' : 'nav-items'} >
-                  <Link href="/user/editprofile" legacyBehavior><a className=""><i className="fa fa-user-circle"></i><p>Edit Profile</p></a></Link>
+                <li className={router.asPath == '/user/editProfile' ? 'activated' : 'nav-items'} >
+                  <Link href="/user/editProfile" legacyBehavior><a className=""><i className="fa fa-user-circle"></i><p>Edit Profile</p></a></Link>
                 </li>
                 <li className="nav-items ">
                   {/* <!-- <a href="" className=""><i className="fa fa-link"></i><p>Domains & URLs</p></a> */}
@@ -71,7 +71,7 @@ const Slider = () =>{
 
                   </ul>
                 </div>
-                <li className="nav-items ">
+                <li className={router.asPath == '/user/homesection' ? 'activated' : 'nav-items'}>
                   <Link href="/user/homesection" legacyBehavior><a className=""><i className="fa fa-home"></i><p>Home Sections</p></a></Link>
                 </li>
                 <li className="nav-items ">
@@ -132,8 +132,8 @@ const Slider = () =>{
                 </li>
                 <div className="collapse  div-collapse" id="collapseExample_qr" >
                   <ul className="nav_collapse">
-                    <li>Generate QR Code</li>
-                    <li>Saved QR Codes</li>
+                    <Link href="/user/qr-code" legacyBehavior><li>Generate QR Code</li></Link>
+                    <Link href="/user/saved-qr" legacyBehavior><li>Saved QR Codes</li></Link>
 
                   </ul>
                 </div>
