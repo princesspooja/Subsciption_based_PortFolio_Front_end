@@ -1,8 +1,6 @@
 
-
 import Script from "next/script";
 import Head from "next/head";
-import Dash from "./dashboardComponent/dash";
 import { useRouter } from "next/router";
 import Navbar from "./dashboardComponent/navbar";
 import Slider from "./dashboardComponent/slider";

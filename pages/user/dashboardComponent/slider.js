@@ -74,8 +74,8 @@ const Slider = () =>{
                 <li className={router.asPath == '/user/homesection' ? 'activated' : 'nav-items'}>
                   <Link href="/user/homesection" legacyBehavior><a className=""><i className="fa fa-home"></i><p>Home Sections</p></a></Link>
                 </li>
-                <li className="nav-items ">
-                  <a href="" className=""><i className="fa fa-toggle-on"></i><p>Preference</p></a>
+                <li className={router.asPath == '/user/preference' ? 'activated' : 'nav-items'}>
+                  <Link href="/user/preference" legacyBehavior><a  className=""><i className="fa fa-toggle-on"></i><p>Preference</p></a></Link>
                 </li>
                 <li className={router.asPath == '/user/skill' ? 'activated' : 'nav-items'}>
                   <Link href="/user/skill" legacyBehavior ><a className=""><i className="fa fa-pencil-ruler"></i><p>Skills</p></a></Link>
@@ -120,8 +120,8 @@ const Slider = () =>{
                 </li>
                 <div className="collapse  div-collapse" id="collapseExampled_blogs" >
                   <ul className="nav_collapse">
-                    <li>Category</li>
-                    <li>Blogs</li>
+                  <Link href="/user/blog-categories" legacyBehavior><li>Category</li></Link>
+                    <Link href="/user/blog" legacyBehavior><li>Blogs</li></Link>
 
                   </ul>
                 </div>

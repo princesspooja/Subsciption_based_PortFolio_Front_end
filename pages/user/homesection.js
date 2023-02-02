@@ -28,13 +28,8 @@ const Homesections = () => {
           <div className="card-body">
               {/* <Editprofiles /> */}
               </div>
-
-
-
         </div>
-
       </div>
-
     </div>
   </div>
 
