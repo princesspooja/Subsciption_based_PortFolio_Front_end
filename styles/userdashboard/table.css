@@ -83,3 +83,11 @@
     max-width: none !important;
     border-collapse: separate !important;
 }
+
+.table_footer {
+    padding: 1rem 1.25rem;
+    background-color: transparent;
+    border-top: 1px solid #ebecec !important;
+    display: flex;
+    justify-content: center;
+}

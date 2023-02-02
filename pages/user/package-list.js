@@ -1,14 +1,15 @@
+
 import Script from "next/script";
 import Head from "next/head";
 import Image from "next/image";
-import Service from "./dashboardComponent/service";
-import Footer from "../user/dashboardComponent/footered";
-import { useRouter } from "next/router";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import Footer from "./dashboardComponent/footered";
+import PriceCards from "./dashboardComponent/priceCards";
 import Navbar from "./dashboardComponent/navbar";
 
-const Services = () => {
-    const router = useRouter();
+const Packagelist = () => {
+  const router = useRouter();
     return (<>
     <Head>
     <link
@@ -16,12 +17,13 @@ const Services = () => {
             rel="stylesheet"
         />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
-        <title>Profilex - User Serivices</title>
+        <title>Profilex - User Dashboard</title>
     </Head>
     
     <div className="wrapper">
+      <Navbar />
 
-<Navbar />
+
 
     {/* <!-- slider --> */}
 
@@ -56,9 +58,9 @@ const Services = () => {
                         <ul className="nav">
                             <div className="row mb-2 row_data" >
                                 <li className="nav-items active">
-                                    <Link href="/user/dashboard" legacyBehavior><a  className="a-active"><i className="fa fa-palette a-active"></i><p>Dashboard</p></a></Link>
+                                   <Link href="/user/dashboard" legacyBehavior><a className="a-active"><i className="fa fa-palette a-active"></i><p>Dashboard</p></a></Link>
                                 </li>
-                                <li className={router.asPath == '/user/dashboard' ? 'activated' : 'nav-items' }>
+                                <li className="nav-items">
                                     <a href="" className=""><i className="fa fa-user-circle"></i><p>Edit Profile</p></a>
                                 </li>
                                 <li className="nav-items ">
@@ -97,11 +99,11 @@ const Services = () => {
                                 <li className="nav-items ">
                                     <a href="" className=""><i className="fa fa-toggle-on"></i><p>Preference</p></a>
                                 </li>
-                                <li className="nav-items ">
-                                    <a href="" className=""><i className="fa fa-pencil-ruler"></i><p>Skills</p></a>
+                                <li className={router.asPath == '/user/skill' ? 'activated' : 'nav-items' }>
+                                <Link href="/user/skill" legacyBehavior><a className=""><i className="fa fa-pencil-ruler"></i><p>Skills</p></a></Link>
                                 </li>
-                                <li className={router.asPath == '/user/services' ? 'activated' : 'nav-items' }>
-                                   <Link href="/user/services" legacyBehavior><a  className=""><i className="fa fa-hands"></i><p>Services</p></a></Link> 
+                                <li className="nav-items ">
+                                    <a href="" className=""><i className="fa fa-hands"></i><p>Services</p></a>
                                 </li>
                                 <li className="nav-items ">
                                     <a data-bs-toggle="collapse" href="#collapseExampled" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -187,8 +189,8 @@ const Services = () => {
                                 <li className="nav-items ">
                                     <a href="" className=""><i className="fa fa-language"></i><p>Language Management</p></a>
                                 </li>
-                                <li className="nav-items ">
-                                    <a href="" className=""><i className="fa fa-file-invoice-dollar"></i><p>Buy Plan</p></a>
+                                <li className={router.asPath == '/user/package-list' ? 'activated' : 'nav-items' }>
+                                    <Link href="/user/package-list" legacyBehavior><a href="" className=""><i className="fa fa-file-invoice-dollar"></i><p>Buy Plan</p></a></Link>
                                 </li>
                                 <li className="nav-items ">
                                     <a href="" className=""><i className="fa fa-list-ol"></i><p>Payment Logs</p></a>
@@ -210,10 +212,7 @@ const Services = () => {
     <div className="main_panel">
       <div className="main_contents">
         <div className="pageinner_data">
-              <Service />
-
-
-
+            <PriceCards />
         </div>
 
       </div>
@@ -230,4 +229,4 @@ const Services = () => {
     </>)
 }
 
-export default Services
+export default Packagelist

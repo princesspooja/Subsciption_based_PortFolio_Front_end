@@ -4,6 +4,7 @@ import Image from "next/image";
 import Dash from "./dashboardComponent/dash";
 import Prefer from "./dashboardComponent/prefer";
 import Link from "next/link";
+import Navbar from "./dashboardComponent/navbar";
 
 
 const Perference = () => {
@@ -18,28 +19,7 @@ const Perference = () => {
     </Head>
     
     <div className="wrapper">
-
-      <nav className="navbar navbar-expand-lg bg-body-tertiary navbar_positon">
-        <div className="container-fluid">
-          <a data-bs-toggle="collapse" href="#offcanvasExample" role="button" aria-expanded="false" aria-controls="collapseExample" id="nav_ancor"><i className="fa fa-bars"></i></a>
-          <a className="navbar-brand" href="#"><Image src="/images/logo.png" width={40} height={40} alt="logo" id="logo_id" /></a>
-  
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">Link</a>
-              </li>
-            </ul>
-  
-          </div>
-        </div>
-      </nav>
+      <Navbar />
 
     {/* <!-- slider --> */}
 
