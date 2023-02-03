@@ -7,9 +7,7 @@ import '../styles/userdashboard/testimonials.css'
 import '../styles/userdashboard/changepassword.css'
 import '../styles/userdashboard/uploadcv.css'
 import '../styles/userdashboard/addvcard.css'
-
-
-
+import '../styles/userdashboard/favicon.css'
 import '../styles/userdashboard/table.css'
 
 export default function App({ Component, pageProps }) {
