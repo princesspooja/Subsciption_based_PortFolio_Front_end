@@ -9,6 +9,11 @@ import '../styles/userdashboard/uploadcv.css'
 import '../styles/userdashboard/addvcard.css'
 import '../styles/userdashboard/favicon.css'
 import '../styles/userdashboard/table.css'
+import '../styles/userdashboard/services.css'
+import '../styles/userdashboard/packagelist.css'
+
+
+
 
 export default function App({ Component, pageProps }) {
   return <Component {...pageProps} />

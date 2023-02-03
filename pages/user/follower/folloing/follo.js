@@ -1,11 +1,10 @@
 import Script from "next/script";
 import Head from "next/head";
 import Image from "next/image";
-import Homesection from "./dashboardComponent/homesection";
-import Navbar from "./dashboardComponent/navbar";
-import Slider from "./dashboardComponent/slider";
-
-const Homesections = () => {
+import Folloing from "../../dashboardComponent/folloing";
+import Navbar from "../../dashboardComponent/navbar";
+import Slider from "../../dashboardComponent/slider";
+const Follo = () => {
     return (<>
     <Head>
     <link
@@ -17,19 +16,31 @@ const Homesections = () => {
     </Head>
     
     <div className="wrapper">
-      <Navbar />
+
+
+<Navbar />
 
     {/* <!-- slider --> */}
-    <Slider />
+
+   <Slider />
     <div className="main_panel">
       <div className="main_contents">
         <div className="pageinner_data">
-              <Homesection />
           <div className="card-body">
-              {/* <Editprofiles /> */}
+            <Folloing />
+
+
+
+
+
               </div>
+
+
+
         </div>
+
       </div>
+
     </div>
   </div>
 
@@ -41,4 +52,4 @@ const Homesections = () => {
     </>)
 }
 
-export default Homesections
+export default Follo;

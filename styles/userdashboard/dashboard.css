@@ -294,6 +294,32 @@
     margin-left: 10px;
     margin-right: 10px;
 
+
+}
+#form_datass label{
+    margin-right: 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #8d9498;
+    margin-bottom: 0px;
+    margin-left: 16px;
+}
+#nav-eyes{
+    margin-right: 17px;
+    padding: 4px 12px;
+    background: #1572E8;
+    border: 1px lightblue;
+    border-radius: 18px;
+    margin-top: 10px;
+    color: #fff9f9;
+}
+
+.check_data{
+    position: relative;
+    display: inline-block;
+    width: 4rem;
+    height: 34px;
 }
 
 .avatar_photo {
@@ -306,6 +332,7 @@
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+    border-radius: 25px;
 }
 
 .info_daata span {

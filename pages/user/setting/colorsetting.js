@@ -1,11 +1,11 @@
 import Script from "next/script";
 import Head from "next/head";
 import Image from "next/image";
-import Homesection from "./dashboardComponent/homesection";
-import Navbar from "./dashboardComponent/navbar";
-import Slider from "./dashboardComponent/slider";
+import Color from "../dashboardComponent/color";
+import Navbar from "../dashboardComponent/navbar";
+import Slider from "../dashboardComponent/slider";
 
-const Homesections = () => {
+const Colorsetting = () => {
     return (<>
     <Head>
     <link
@@ -24,12 +24,21 @@ const Homesections = () => {
     <div className="main_panel">
       <div className="main_contents">
         <div className="pageinner_data">
-              <Homesection />
           <div className="card-body">
-              {/* <Editprofiles /> */}
+            <Color />
+
+
+
+
+
               </div>
+
+
+
         </div>
+
       </div>
+
     </div>
   </div>
 
@@ -41,4 +50,4 @@ const Homesections = () => {
     </>)
 }
 
-export default Homesections
+export default Colorsetting;

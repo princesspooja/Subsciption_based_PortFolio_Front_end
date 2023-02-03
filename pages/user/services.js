@@ -1,11 +1,15 @@
 import Script from "next/script";
 import Head from "next/head";
 import Image from "next/image";
-import Homesection from "./dashboardComponent/homesection";
+import Service from "./dashboardComponent/service";
+import Footer from "../user/dashboardComponent/footered";
+import { useRouter } from "next/router";
+import Link from "next/link";
 import Navbar from "./dashboardComponent/navbar";
 import Slider from "./dashboardComponent/slider";
 
-const Homesections = () => {
+const Services = () => {
+    const router = useRouter();
     return (<>
     <Head>
     <link
@@ -13,23 +17,25 @@ const Homesections = () => {
             rel="stylesheet"
         />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
-        <title>Profilex - User Dashboard</title>
+        <title>Profilex - User Serivices</title>
     </Head>
     
     <div className="wrapper">
-      <Navbar />
+
+<Navbar />
 
     {/* <!-- slider --> */}
     <Slider />
     <div className="main_panel">
       <div className="main_contents">
         <div className="pageinner_data">
-              <Homesection />
-          <div className="card-body">
-              {/* <Editprofiles /> */}
-              </div>
+              <Service />
+
         </div>
+
       </div>
+      <Footer />
+
     </div>
   </div>
 
@@ -41,4 +47,4 @@ const Homesections = () => {
     </>)
 }
 
-export default Homesections
+export default Services

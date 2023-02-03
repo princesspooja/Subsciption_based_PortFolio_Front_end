@@ -1,15 +1,11 @@
 import Script from "next/script";
 import Head from "next/head";
-import Image from "next/image";
-import Dash from "./dashboardComponent/dash";
-import { useRouter } from "next/router";
+import Prefer from "./dashboardComponent/prefer";
 import Navbar from "./dashboardComponent/navbar";
-import Link from "next/link";
 import Slider from "./dashboardComponent/slider";
 
-const Dashboard = () => {
 
-  const router = useRouter();
+const Perference = () => {
   return (<>
     <Head>
       <link
@@ -23,22 +19,17 @@ const Dashboard = () => {
     <div className="wrapper">
       <Navbar />
 
-
       {/* <!-- slider --> */}
-      <Slider />
 
+      <Slider />
       <div className="main_panel">
         <div className="main_contents">
-          <div className="pageinner_datas">
-            <div className="dash_dash">
-
-              <Dash />
+          <div className="pageinner_data">
+            <div className="card-body">
+              <Prefer />
             </div>
-
           </div>
-
         </div>
-
       </div>
     </div>
 
@@ -50,4 +41,4 @@ const Dashboard = () => {
   </>)
 }
 
-export default Dashboard;
+export default Perference;

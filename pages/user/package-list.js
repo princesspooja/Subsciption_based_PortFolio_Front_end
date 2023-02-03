@@ -1,11 +1,16 @@
+
 import Script from "next/script";
 import Head from "next/head";
 import Image from "next/image";
-import Homesection from "./dashboardComponent/homesection";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import Footer from "./dashboardComponent/footered";
+import PriceCards from "./dashboardComponent/priceCards";
 import Navbar from "./dashboardComponent/navbar";
 import Slider from "./dashboardComponent/slider";
 
-const Homesections = () => {
+const Packagelist = () => {
+  const router = useRouter();
     return (<>
     <Head>
     <link
@@ -19,17 +24,20 @@ const Homesections = () => {
     <div className="wrapper">
       <Navbar />
 
+
+
     {/* <!-- slider --> */}
-    <Slider />
+
+   <Slider />
     <div className="main_panel">
       <div className="main_contents">
         <div className="pageinner_data">
-              <Homesection />
-          <div className="card-body">
-              {/* <Editprofiles /> */}
-              </div>
+            <PriceCards />
         </div>
+
       </div>
+      <Footer />
+
     </div>
   </div>
 
@@ -41,4 +49,4 @@ const Homesections = () => {
     </>)
 }
 
-export default Homesections
+export default Packagelist
