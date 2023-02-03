@@ -11,7 +11,7 @@ const homesection = () => {
 
         <title>Profilex - User Dashboard</title>
     </Head>
-    <div className="home-page-inner">
+
         <div className="home-page-header">
             <h4 className="home-page-title">Home Sections</h4>
             <ul className="breadcrumbs">
@@ -391,7 +391,6 @@ const homesection = () => {
                 </div>
             </div>
         </div>
-    </div>
     </>)
 }
 export default homesection

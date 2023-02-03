@@ -84,7 +84,6 @@ const SavedQr = () => {
 
                               <td className="td-data"><a ><button type="button" className="btn btn-primary"><span>Download</span></button></a>  <a><button type="button" className="btn btn-danger"><span>Delete</span> </button></a></td>
                             </tr>
-
                           </tbody>
                         </table>
                       </div>

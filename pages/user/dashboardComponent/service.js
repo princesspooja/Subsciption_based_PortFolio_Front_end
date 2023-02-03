@@ -128,13 +128,13 @@ const Service = () => {
               </div>
               <div className="row">
                 <div className="col-sm-12 mt-3">
-                  <label for="exampleInputEmail1" className="form-label">Language**</label>
+                  <label htmlFor="exampleInputEmail1" className="form-label">Language**</label>
                   <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                 </div>
               </div>
               <div className="row">
                 <div className="col-sm-12 mt-3">
-                  <label for="exampleInputEmail1" className="form-label">Name**</label>
+                  <label htmlFor="exampleInputEmail1" className="form-label">Name**</label>
                   <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                 </div>
               </div>
@@ -145,7 +145,7 @@ const Service = () => {
               </div>
               <div className="row">
                 <div className="col-sm-12 mt-5">
-                  <label for="exampleInputEmail1" className="form-label">Serial Number</label>
+                  <label htmlFor="exampleInputEmail1" className="form-label">Serial Number</label>
                   <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                   <div id="emailHelp" className="form-text text-warning">The higher the serial number is, the later the Skill will be shown.</div>
                 </div>
@@ -153,29 +153,29 @@ const Service = () => {
 
               <div className="row">
                 <div className="col-sm-12 mt-5">
-                  <div class="form-check">
-                    <label class="form-check-label float-left mr-3" for="flexCheckDefault">
+                  <div className="form-check">
+                    <label className="form-check-label float-left mr-3" htmlFor="flexCheckDefault">
                       Featured
                     </label>
-                    <input class="form-check-input ml-3" type="checkbox" value="" id="flexCheckDefault" />
+                    <input className="form-check-input ml-3" type="checkbox" value="" id="flexCheckDefault" />
 
                   </div>
                 </div>
               </div>
               <div className="row">
                 <div className="col-sm-12 mt-5 d-flex">
-                <label class="form-check-label float-left mr-3" for="flexCheckDefault">
+                <label className="form-check-label float-left mr-3" htmlFor="flexCheckDefault">
                       Details page
                     </label>
-                  <div class="form-check ml-3">
-                    <input class="form-check-input ml-3" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" />
-                    <label class="form-check-label" for="flexRadioDisabled">
+                  <div className="form-check ml-3">
+                    <input className="form-check-input ml-3" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" />
+                    <label className="form-check-label" htmlFor="flexRadioDisabled">
                       Enable
                     </label>
                   </div>
-                  <div class="form-check ">
-                    <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" />
-                    <label class="form-check-label" for="flexRadioDisabled">
+                  <div className="form-check ">
+                    <input className="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" />
+                    <label className="form-check-label" htmlFor="flexRadioDisabled">
                       Disable
                     </label>
                   </div>
@@ -183,14 +183,14 @@ const Service = () => {
               </div>
               <div className="row">
                 <div className="col-sm-12 mt-5">
-                  <label for="exampleInputEmail1" className="form-label">Meta Keyword</label>
+                  <label htmlFor="exampleInputEmail1" className="form-label">Meta Keyword</label>
                   <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                 </div>
               </div>
               <div className="row">
                 <div className="col-sm-12 mt-5">
-                  <label for="exampleInputEmail1" className="form-label">Meta Description</label>
-                  <textarea class="form-control" id="floatingTextarea2" style={{height:120}}></textarea>
+                  <label htmlFor="exampleInputEmail1" className="form-label">Meta Description</label>
+                  <textarea className="form-control" id="floatingTextarea2" style={{height:120}}></textarea>
                 </div>
               </div>
             </div>

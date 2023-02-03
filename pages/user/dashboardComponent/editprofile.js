@@ -10,7 +10,6 @@ const Editprofiles = () => {
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
         <title>Profilex - User Dashboard-edit profile</title>
     </Head>
-    <div className="edit-page-inner">
             <div className="edit-page-header">
                 <h4 className="edit-page-title">Edit Profile</h4>
                 <ul className="breadcrumbs">
@@ -45,7 +44,7 @@ const Editprofiles = () => {
                             <div className="col-g-12">
                               <div className="form-group">
                                 <div className="col">
-                                  <label for="image">
+                                  <label htmlFor="image">
                                     <strong>Profile Image ***</strong>
                                   </label>
                                 </div>
@@ -58,35 +57,35 @@ const Editprofiles = () => {
                               </div>
                             </div>
                             <div className="form-group">
-                              <label for>First Name **</label>
+                              <label>First Name **</label>
                               <input type="text" name="first_name" className="form-control" value="Romario"/>
                             </div>
                             <div className="form-group">
-                              <label for>Last Name **</label>
+                              <label >Last Name **</label>
                               <input type="text" name="last_name"  className="form-control" value="Sara"/>
                             </div>
                             <div className="form-group">
-                              <label for>User Name **</label>
+                              <label>User Name **</label>
                               <input type="text" name="user_name" className="form-control" value="Romario"/>
                             </div>
                             <div className="form-group">
-                              <label for>Phone **</label>
+                              <label >Phone **</label>
                               <input type="number" name="number" className="form-control" value="1253447823"/>
                             </div>
                             <div className="form-group">
-                              <label for>Address **</label>
+                              <label >Address **</label>
                               <textarea type="text" name="addres" className="form-control" cols="30" rows="10">CA ,USA</textarea>
                             </div>
                             <div className="form-group">
-                              <label for>City **</label>
+                              <label >City **</label>
                               <input type="text" name="citry"  className="form-control" value="CA"/>
                             </div>
                             <div className="form-group">
-                              <label for>State **</label>
+                              <label >State **</label>
                               <input type="text" name="state" id="" className="form-control" value="CA"/>
                             </div>
                             <div className="form-group">
-                              <label for>Country **</label>
+                              <label >Country **</label>
                               <input type="text" name="country" id="" className="form-control" value="USA"/>
                             </div>
                           </div>
@@ -106,7 +105,7 @@ const Editprofiles = () => {
                 </div>
               </div>
             </div>
-          </div>
+          
     </>)
 }
 export default Editprofiles

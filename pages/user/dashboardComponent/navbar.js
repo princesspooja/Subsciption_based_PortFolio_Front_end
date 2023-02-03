@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = ()=>{
     return(<>
@@ -14,12 +15,12 @@ const Navbar = ()=>{
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item mt-2">
-                <a className="mr-5" id="nav-eyes"><i className="fa fa-eye"></i></a>
+                <Link href="/Romario" legacyBehavior><a className="mr-5" id="nav-eyes"><i className="fa fa-eye"></i></a></Link>
               </li>
               
               <li className="nav-item"><div className="form-check form-switch" id="form_datass">
                 <input className="form-check-input check_data" type="checkbox" role="switch" id="flexSwitchCheckChecked" style={{width:61}} />
-                <label className="form-check-label" for="flexSwitchCheckChecked">Active</label>
+                <label className="form-check-label" htmlFor="flexSwitchCheckChecked">Active</label>
               </div>
               </li>
               <li className="nav-item"><div className="avatar_photo float-left mr-2">

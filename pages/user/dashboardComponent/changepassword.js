@@ -10,7 +10,7 @@ const Changepassword = () => {
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
         <title>Profilex - User Dashboard-changepass profile</title>
     </Head>
-    <div className="changepass-page-inner">
+    
             <div className="changepass-page-header">
                 <h4 className="changepass-page-title">Password</h4>
                 <ul className="breadcrumbs">
@@ -82,7 +82,7 @@ const Changepassword = () => {
                 </div>
               </div>
             </div>
-          </div>
+          
     </>)
 }
 export default Changepassword

@@ -95,8 +95,8 @@ const Slider = () =>{
 
                   </ul>
                 </div>
-                <li className="nav-items">
-                  <a href="" className=""><i className="fa fa-trophy"></i><p>Achievements</p></a>
+                <li className={router.asPath == '/user/achievements' ? 'activated' : 'nav-items'}>
+                 <Link href="/user/achievements" legacyBehavior><a href="" className=""><i className="fa fa-trophy"></i><p>Achievements</p></a></Link>
                 </li>
                 <li className="nav-items ">
                   <a data-bs-toggle="collapse" href="#collapseExampled_portfolio" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -127,7 +127,7 @@ const Slider = () =>{
                 </div>
                 <li className="nav-items ">
                   <a data-bs-toggle="collapse" href="#collapseExample_qr" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    <i className="fa fa-qr-code"></i><p>QR Codes</p><span className="paret_qr"></span>
+                    <i className="fa fa-qrcode"></i><p>QR Codes</p><span className="paret_qr"></span>
                   </a>
                 </li>
                 <div className="collapse  div-collapse" id="collapseExample_qr" >
@@ -145,7 +145,7 @@ const Slider = () =>{
                 <div className="collapse  div-collapse" id="collapseExample_vcards" >
                   <ul className="nav_collapse">
                     <li>vCards</li>
-                    <li>Add vCard</li>
+                    <Link href="/user/addvcard" legacyBehavior><li>Add vCard</li></Link>
 
                   </ul>
                 </div>
@@ -170,14 +170,14 @@ const Slider = () =>{
                 <li className={router.asPath == '/user/package-list' ? 'activated' : 'nav-items'}>
                   <Link href="/user/package-list" legacyBehavior><a href="" className=""><i className="fa fa-file-invoice-dollar"></i><p>Buy Plan</p></a></Link>
                 </li>
-                <li className="nav-items ">
-                  <a href="" className=""><i className="fa fa-list-ol"></i><p>Payment Logs</p></a>
+                <li className={router.asPath == '/user/payment-log' ? 'activated' : 'nav-items'}>
+                  <Link href="/user/payment-log" legacyBehavior><a  className=""><i className="fa fa-list-ol"></i><p>Payment Logs</p></a></Link>
                 </li>
-                <li className="nav-items ">
-                  <a href="" className=""><i className="fa fa-cloud-upload-alt"></i><p>Upload CV</p></a>
+                <li className={router.asPath == '/user/uploadcv' ? 'activated' : 'nav-items'}>
+                  <Link href="/user/uploadcv" legacyBehavior><a className=""><i className="fa fa-cloud-upload-alt"></i><p>Upload CV</p></a></Link>
                 </li>
-                <li className="nav-items ">
-                  <a href="" className=""><i className="fa fa-key"></i><p>Change Password</p></a>
+                <li className={router.asPath == '/user/changepassword' ? 'activated' : 'nav-items'}>
+                  <Link href="/user/changepassword" legacyBehavior><a className=""><i className="fa fa-key"></i><p>Change Password</p></a></Link>
                 </li>
 
               </div>
