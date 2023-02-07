@@ -13,6 +13,7 @@ const Dash = () => {
 
 
         {/* <!-- first part --> */}
+        <div className="page_innerdatas">
 
         <div className="container first-page">
             <div className="row">
@@ -307,6 +308,7 @@ const Dash = () => {
 
 
 
+
         {/* <!-- footer --> */}
 
         <footer className="footer">
@@ -314,6 +316,7 @@ const Dash = () => {
                 <div className="setting-footer">Copyright © 2021. All rights reserved by Sasso.</div>
             </div>
         </footer>
+        </div>
         <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
             ></Script>
 

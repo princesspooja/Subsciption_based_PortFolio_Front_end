@@ -8,3 +8,5 @@ const PaymmentLogs = ()=>{
         </Layout>
     )
 }
+
+export default PaymmentLogs

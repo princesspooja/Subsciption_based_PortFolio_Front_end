@@ -1,11 +1,11 @@
 import Layout from "../../components/layout";
-import Uploadcv from "./dashboardComponent/uploadcv";
+import UploadcvData from "./dashboardComponent/uploadcvdata";
 
-const uploadcv = () => {
+const Uploadcv = () => {
     return (
     <Layout>
-      <Uploadcv />
+      <h1>Hello</h1>
     </Layout>)
 }
 
-export default uploadcv
+export default Uploadcv

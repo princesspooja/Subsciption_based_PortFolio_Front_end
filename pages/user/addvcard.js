@@ -2,7 +2,7 @@ import Layout from "../../components/layout";
 import Addvcard from "./dashboardComponent/addvcard";
 
 
-const addvcard = () => {
+const Addvcard = () => {
     return (
       <Layout>
         <Addvcard />
@@ -10,4 +10,4 @@ const addvcard = () => {
     )
 }
 
-export default addvcard
+export default Addvcard

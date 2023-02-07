@@ -3,7 +3,8 @@ import Achievements from "./dashboardComponent/achievements";
 
 
 const achievements = () => {
-    return (<Layout>
+    return (
+    <Layout>
       <Achievements />
     </Layout>)
 }

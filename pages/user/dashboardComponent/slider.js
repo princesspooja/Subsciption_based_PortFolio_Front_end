@@ -110,8 +110,8 @@ const Slider = () =>{
 
                   </ul>
                 </div>
-                <li className="nav-items ">
-                  <a className=""><i className="fa fa-comment"></i><p>Testimonial</p></a>
+                <li className={router.asPath == '/user/testimonials' ? 'activated' : 'nav-items'}>
+                  <Link href="/user/testimonials" legacyBehavior><a className=""><i className="fa fa-comment"></i><p>Testimonial</p></a></Link>
                 </li>
                 <li className="nav-items ">
                   <a data-bs-toggle="collapse" href="#collapseExampled_blogs" role="button" aria-expanded="false" aria-controls="collapseExample">

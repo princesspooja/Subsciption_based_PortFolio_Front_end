@@ -2,11 +2,11 @@ import Layout from "../../components/layout";
 import Jobexprience from "./dashboardComponent/Jobexprience";
 
 
-const jobexprience = () => {
+const Jobexprience = () => {
     return (
     <Layout>
       <Jobexprience />
     </Layout>)
 }
 
-export default jobexprience
+export default Jobexprience
