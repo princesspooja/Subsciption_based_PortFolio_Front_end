@@ -399,6 +399,13 @@
     }
 }
 
+@media only screen and (min-width:990px) and (max-width: 990px){
+    .slidebar{
+        display: block;
+    }
+    
+}
+
 @media only screen and (min-width: 990px) {
     #nav_ancor {
         display: none;
@@ -644,3 +651,13 @@ body{
     background-color: #f9fbfd;
 }
 
+.form_datass{
+    margin-bottom: o;
+    padding: 11px;
+}
+
+#label_item{
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}

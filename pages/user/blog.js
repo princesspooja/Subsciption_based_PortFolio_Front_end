@@ -3,7 +3,7 @@ import Blogs from "./dashboardComponent/blogs";
 
 
 const Blog = () => {
-    const router = useRouter();
+    
     return (
       <Layout>
         <Blogs />

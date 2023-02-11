@@ -15,7 +15,7 @@ const Quill = ({setData}) => {
 
   return (
     <>
-      <div style={{ width: 465, height: 100 }}>
+      <div style={{ width: '100%', height: 100 }}>
         <div ref={quillRef} />
       </div>
     </>
