@@ -1,13 +1,13 @@
 import AdminLayout from "../../components/adminLayout";
-import Service from "../user/dashboardComponent/service"; 
+import Dashboard from "./dashboardComponents/dashboad";
 
-const AdminDashboard = ()=>{
+const AdminDash = ()=>{
     return(
         <AdminLayout>
-            <Service />
+            <Dashboard />
 
         </AdminLayout>
     )
 }
 
-export default AdminDashboard
+export default AdminDash;

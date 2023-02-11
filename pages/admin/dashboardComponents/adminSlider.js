@@ -44,7 +44,7 @@ const AdminSlider = () => {
                             <ul className="nav">
                                 <div className="row mb-2 row_data" >
                                     <li className={router.asPath == '/admin/dashboard' ? 'activated' : 'nav-items'}>
-                                        <Link href="/user/dashboard" legacyBehavior><a href="" className="a-active"><i className="fa fa-palette a-active"></i><p>Dashboard</p></a></Link>
+                                        <Link href="/admin/dashboard" legacyBehavior><a href="" className="a-active"><i className="fa fa-palette a-active"></i><p>Dashboard</p></a></Link>
                                     </li>
                                     <li className="nav-items ">
                                         {/* <!-- <a href="" className=""><i className="fa fa-link"></i><p>Domains & URLs</p></a> */}
@@ -55,13 +55,13 @@ const AdminSlider = () => {
                                     </li>
                                     <div className="collapse  div-collapse" id="collapseExampleAdm" >
                                         <ul className="nav_collapse">
-                                            <Link href="/user/customdomain" legacyBehavior><li ><a>Setting</a></li></Link>
-                                            <li>Package Features</li>
-                                            <li>Packages</li>
+                                            <Link href="/admin/package/settings" legacyBehavior><li ><a>Setting</a></li></Link>
+                                            <Link href="/admin/package/features" legacyBehavior><li>Package Features</li></Link>
+                                            <Link href="/admin/packages" legacyBehavior><li>Packages</li></Link>
                                         </ul>
                                     </div>
-                                    <li className={router.asPath == '/user/editProfile' ? 'activated' : 'nav-items'} >
-                                        <Link href="/user/editProfile" legacyBehavior><a className=""><i className="fa fa-user-circle"></i><p>Payment Logs</p></a></Link>
+                                    <li className={router.asPath == '/admin/payment-log' ? 'activated' : 'nav-items'} >
+                                        <Link href="/admin/payment-log" legacyBehavior><a className=""><i className="fa fa-user-circle"></i><p>Payment Logs</p></a></Link>
                                     </li>
                                     <li className="nav-items">
                                         <a data-bs-toggle="collapse" href="#collapseExamplcus" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -70,11 +70,11 @@ const AdminSlider = () => {
                                     </li>
                                     <div className="collapse  div-collapse" id="collapseExamplcus" >
                                         <ul className="nav_collapse">
-                                            <li>Request Page Texts</li>
-                                            <li>All Requests</li>
-                                            <li>Pending Requests</li>
-                                            <li>Connected Requests</li>
-                                            <li>Rejected Requests</li>
+                                            <Link href="/admin/domain/texts" legacyBehavior><li>Request Page Texts</li></Link>
+                                            <Link href="/admin/domain/domains" legacyBehavior><li>All Requests</li></Link>
+                                            <Link href="/admin/domain/pending" legacyBehavior><li>Pending Requests</li></Link>
+                                            <Link href="/admin/domain/connected" legacyBehavior><li>Connected Requests</li></Link>
+                                            <Link href="/admin/domain/rejected" legacyBehavior><li>Rejected Requests</li></Link>
                                         </ul>
                                     </div>
                                     <li className="nav-items">
@@ -118,8 +118,8 @@ const AdminSlider = () => {
                                     </li>
                                     <div className="collapse  div-collapse" id="collapseExamplfooter" >
                                         <ul className="nav_collapse">
-                                            <li>Image & Text</li>
-                                            <li>Useful Links</li>
+                                            <Link href="/admin/footers" legacyBehavior><li>Image & Text</li></Link>
+                                            <Link href="/admin/ulinks" legacyBehavior><li>Useful Links</li></Link>
                                         </ul>
                                     </div>
                                     <li className="nav-items">
@@ -129,8 +129,8 @@ const AdminSlider = () => {
                                     </li>
                                     <div className="collapse  div-collapse" id="collapseExamplpage" >
                                         <ul className="nav_collapse">
-                                            <li>Create Page</li>
-                                            <li>Pages</li>
+                                            <Link href="/admin/page/create" legacyBehavior><li>Create Page</li></Link>
+                                            <Link href="/admin/pages" legacyBehavior><li>Pages</li></Link>
                                         </ul>
                                     </div>
                                     <li className="nav-items">
@@ -140,12 +140,12 @@ const AdminSlider = () => {
                                     </li>
                                     <div className="collapse  div-collapse" id="collapseExamplBlogs" >
                                         <ul className="nav_collapse">
-                                            <li>Category</li>
-                                            <li>Blogs</li>
+                                            <Link href="/admin/bcategorys" legacyBehavior><li>Category</li></Link>
+                                            <Link href="/admin/blogs"><li>Blogs</li></Link>
                                         </ul>
                                     </div>
-                                    <li className="nav-items">
-                                        <a className=""><i className="fa fa-toggle-on"></i><p>FAQ Management</p></a>
+                                    <li className={router.asPath == "/admin/faqs" ? 'activated' : 'nav-items'}>
+                                        <Link href="/admin/faqs" legacyBehavior><a className=""><i className="fa fa-toggle-on"></i><p>FAQ Management</p></a></Link>
                                     </li>
                                     <li className="nav-items">
                                         <a className=""><i className="fa fa-toggle-on"></i><p>Contact Page</p></a>
