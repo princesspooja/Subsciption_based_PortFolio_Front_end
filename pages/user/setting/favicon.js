@@ -27,15 +27,7 @@ const Favicon = () => {
         <div className="pageinner_data">
           <div className="card-body">
             <Icon />
-
-
-
-
-
               </div>
-
-
-
         </div>
 
       </div>
