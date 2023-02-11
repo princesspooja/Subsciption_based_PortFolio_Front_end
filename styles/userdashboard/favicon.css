@@ -292,3 +292,26 @@ button */
     font-weight: 400;
     text-align: center;
 }
+
+/* admin features */
+.setting-form-features{
+    width: 628px;
+    display: inline;
+    margin: auto;
+    padding: 0px;
+    margin-top: -33px;
+}
+.package{
+   
+    border: 0px;
+    position: relative;
+    padding: 0.95rem 1.25rem;
+    border-radius: 1px;
+    color: #575962;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 14px 0px rgb(18 38 63 / 26%);
+}
+.feature{
+    border-left: 4px solid #FFAD46;
+   
+}
