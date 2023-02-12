@@ -39,7 +39,6 @@ const Subscribers = () => {
                             <div className="col-lg-12">
                                 <div className="table-responsive">
                                     <div className="dataTables container-fluids ">
-                                       
                                         <div className="row">
                                             <div className="col-sm-12">
                                                 <table className="table table-light table-striped  mt-3 " id="shri-table">
@@ -61,8 +60,6 @@ const Subscribers = () => {
                                                             <td>cotgotehuf@outlook.com</td>
                                                             <td className="td-data">  <a><button type="button" className="btn btn-danger"><i className="fa fa-trash"></i><span>Delete</span> </button></a></td>
                                                         </tr>
-
-
                                                     </tbody>
                                                 </table>
                                             </div>
