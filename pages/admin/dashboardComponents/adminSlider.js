@@ -49,7 +49,7 @@ const AdminSlider = () => {
                                     <li className="nav-items ">
                                         {/* <!-- <a href="" className=""><i className="fa fa-link"></i><p>Domains & URLs</p></a> */}
                                         <a data-bs-toggle="collapse" href="#collapseExampleAdm" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                            <i className="fa fa-link"></i><p>Package Management</p><span className="paret_domain"></span>
+                                            <i className="fas fa-receipt"></i><p>Package Management</p><span className="paret_domain"></span>
                                         </a>
 
                                     </li>
@@ -61,11 +61,11 @@ const AdminSlider = () => {
                                         </ul>
                                     </div>
                                     <li className={router.asPath == '/admin/payment-log' ? 'activated' : 'nav-items'} >
-                                        <Link href="/admin/payment-log" legacyBehavior><a className=""><i className="fa fa-user-circle"></i><p>Payment Logs</p></a></Link>
+                                        <Link href="/admin/payment-log" legacyBehavior><a className=""><i className="fas fa-file-invoice-dollar"></i><p>Payment Logs</p></a></Link>
                                     </li>
                                     <li className="nav-items">
                                         <a data-bs-toggle="collapse" href="#collapseExamplcus" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                            <i className="fa fa-home"></i><p>Custom Domains</p><span className="paret_setting"></span>
+                                            <i className="fas fa-link"></i><p>Custom Domains</p><span className="paret_setting"></span>
                                         </a>
                                     </li>
                                     <div className="collapse  div-collapse" id="collapseExamplcus" >
@@ -79,7 +79,7 @@ const AdminSlider = () => {
                                     </div>
                                     <li className="nav-items">
                                         <a data-bs-toggle="collapse" href="#collapseExamplsub" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                            <i className="fa fa-home"></i><p>Subdomains</p><span className="paret_setting"></span>
+                                            <i className="fas fa-link"></i><p>Subdomains</p><span className="paret_setting"></span>
                                         </a>
                                     </li>
                                     <div className="collapse  div-collapse" id="collapseExamplsub" >
@@ -90,10 +90,10 @@ const AdminSlider = () => {
                                         </ul>
                                     </div>
                                     <li className="nav-items">
-                                        <a className=""><i className="fa fa-home"></i><p>Registered Users</p></a>
+                                        <a className=""><i className="fa fa-users"></i><p>Registered Users</p></a>
                                     </li>
                                     <li className="nav-items">
-                                        <a className=""><i className="fa fa-home"></i><p>Menu Builder</p></a>
+                                        <a className=""><i className="fas fa-bars"></i><p>Menu Builder</p></a>
                                     </li>
 
                                     <li className="nav-items">
@@ -113,7 +113,7 @@ const AdminSlider = () => {
                                     </div>
                                     <li className="nav-items">
                                         <a data-bs-toggle="collapse" href="#collapseExamplfooter" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                            <i className="fa fa-home"></i><p>Footer</p><span className="paret_setting"></span>
+                                            <i className="fas fa-shoe-prints"></i><p>Footer</p><span className="paret_setting"></span>
                                         </a>
                                     </li>
                                     <div className="collapse  div-collapse" id="collapseExamplfooter" >
@@ -124,7 +124,7 @@ const AdminSlider = () => {
                                     </div>
                                     <li className="nav-items">
                                         <a data-bs-toggle="collapse" href="#collapseExamplpage" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                            <i className="fa fa-home"></i><p>Pages</p><span className="paret_setting"></span>
+                                            <i className="fa fa-file"></i><p>Pages</p><span className="paret_setting"></span>
                                         </a>
                                     </li>
                                     <div className="collapse  div-collapse" id="collapseExamplpage" >
@@ -135,7 +135,7 @@ const AdminSlider = () => {
                                     </div>
                                     <li className="nav-items">
                                         <a data-bs-toggle="collapse" href="#collapseExamplBlogs" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                            <i className="fa fa-home"></i><p>Blogs</p><span className="paret_setting"></span>
+                                            <i className="fas fa-blog"></i><p>Blogs</p><span className="paret_setting"></span>
                                         </a>
                                     </li>
                                     <div className="collapse  div-collapse" id="collapseExamplBlogs" >
@@ -145,15 +145,15 @@ const AdminSlider = () => {
                                         </ul>
                                     </div>
                                     <li className={router.asPath == "/admin/faqs" ? 'activated' : 'nav-items'}>
-                                        <Link href="/admin/faqs" legacyBehavior><a className=""><i className="fa fa-toggle-on"></i><p>FAQ Management</p></a></Link>
+                                        <Link href="/admin/faqs" legacyBehavior><a className=""><i className="fa fa-question"></i><p>FAQ Management</p></a></Link>
                                     </li>
                                     <li className="nav-items">
-                                        <a className=""><i className="fa fa-toggle-on"></i><p>Contact Page</p></a>
+                                        <a className=""><i className="fa-brands fa-whatsapp"></i><p>Contact Page</p></a>
                                     </li>
 
                                     <li className="nav-items">
                                         <a data-bs-toggle="collapse" href="#collapseExamplanou" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                            <i className="fa fa-home"></i><p>Announcement Popus</p><span className="paret_setting"></span>
+                                            <i className="fas fa-bullhorn"></i><p>Announcement Popus</p><span className="paret_setting"></span>
                                         </a>
                                     </li>
                                     <div className="collapse  div-collapse" id="collapseExamplanou" >
@@ -165,19 +165,19 @@ const AdminSlider = () => {
 
                                     <li className="nav-items">
                                         <a data-bs-toggle="collapse" href="#collapseExamplanoti" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                            <i className="fa fa-home"></i><p>Push Notification</p><span className="paret_setting"></span>
+                                            <i className="far fa-bell"></i><p>Push Notification</p><span className="paret_setting"></span>
                                         </a>
                                     </li>
                                     <div className="collapse  div-collapse" id="collapseExamplanoti" >
                                         <ul className="nav_collapse">
-                                            <li>Settings</li>
-                                            <li>Send Notifications</li>
+                                            <Link href="/admin/pushnotification/notifications" legacyBehavior><li>Settings</li></Link>
+                                            <Link href="/admin/pushnotification/send"><li>Send Notifications</li></Link>
                                         </ul>
                                     </div>
 
                                     <li className="nav-items">
                                         <a data-bs-toggle="collapse" href="#collapseExamplasub" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                            <i className="fa fa-home"></i><p>Subscribers</p><span className="paret_setting"></span>
+                                            <i className="fa fa-envelope"></i><p>Subscribers</p><span className="paret_setting"></span>
                                         </a>
                                     </li>
                                     <div className="collapse  div-collapse" id="collapseExamplasub" >
@@ -189,7 +189,7 @@ const AdminSlider = () => {
 
                                     <li className="nav-items">
                                         <a data-bs-toggle="collapse" href="#collapseExamplangate" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                            <i className="fa fa-home"></i><p>Payment Gateway</p><span className="paret_setting"></span>
+                                            <i className="fa-brands fa-paypal"></i><p>Payment Gateway</p><span className="paret_setting"></span>
                                         </a>
                                     </li>
                                     <div className="collapse  div-collapse" id="collapseExamplangate" >
@@ -201,7 +201,7 @@ const AdminSlider = () => {
 
                                     <li className="nav-items">
                                         <a data-bs-toggle="collapse" href="#collapseExamplseti" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                            <i className="fa fa-home"></i><p>Payment Gateway</p><span className="paret_setting"></span>
+                                        <i class="fa-solid fa-gear"></i><p>setting</p><span className="paret_setting"></span>
                                         </a>
                                     </li>
                                     <div className="collapse  div-collapse" id="collapseExamplseti" >
@@ -221,16 +221,16 @@ const AdminSlider = () => {
                                     </div>
 
                                     <li className="nav-items">
-                                        <a className=""><i className="fa fa-toggle-on"></i><p>Language Management</p></a>
+                                        <a className=""><i class="fa-regular fa-comments"></i><p>Language Management</p></a>
                                     </li>
                                     <li className="nav-items">
                                         <a className=""><i className="fa fa-toggle-on"></i><p>Role Management</p></a>
                                     </li>
                                     <li className="nav-items">
-                                        <a className=""><i className="fa fa-toggle-on"></i><p>Admins Management</p></a>
+                                        <a className=""><i className="fa fa-user"></i><p>Admins Management</p></a>
                                     </li>
                                     <li className="nav-items">
-                                        <a className=""><i className="fa fa-toggle-on"></i><p>Clear Cache</p></a>
+                                        <a className=""><i className="fa fa-xmark"></i><p>Clear Cache</p></a>
                                     </li>
 
                                 </div>
