@@ -12,6 +12,18 @@ import '../styles/userdashboard/table.css'
 import '../styles/userdashboard/services.css'
 import '../styles/userdashboard/packagelist.css'
 
+//admin dashboard css..
+import '../styles/adminDashboard/allsubdomain.css'
+import '../styles/adminDashboard/pendingsubdomain.css'
+import '../styles/adminDashboard/connectsubdomain.css'
+import '../styles/adminDashboard/registeruser.css'
+import '../styles/adminDashboard/favicon.css'
+import '../styles/adminDashboard/logo.css'
+import '../styles/adminDashboard/mailfromadmin.css'
+import '../styles/adminDashboard/mailtoadmin.css'
+import '../styles/adminDashboard/maintenancemode.css'
+import '../styles/adminDashboard/basicinformations.css'
+
 
 
 

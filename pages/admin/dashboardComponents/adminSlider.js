@@ -84,9 +84,22 @@ const AdminSlider = () => {
                                     </li>
                                     <div className="collapse  div-collapse" id="collapseExamplsub" >
                                         <ul className="nav_collapse">
-                                            <li>All Subdomains</li>
+                                            <li className={router.asPath == '/admin/dashboard' ? 'activated' : 'nav-items'}>
+                                                <Link href="/admin/allsubdomain" legacyBehavior><a href="" className="a-active"><i className="fa fa-palette a-active"></i><p>All Subdomains</p></a></Link>
+                                            </li>
+                                            <li className={router.asPath == '/admin/dashboard' ? 'activated' : 'nav-items'}>
+                                                <Link href="/admin/pendingsubdomain" legacyBehavior><a href="" className="a-active"><i className="fa fa-palette a-active"></i><p>Pending Subdomains</p></a></Link>
+                                            </li>
+                                            <li className={router.asPath == '/admin/dashboard' ? 'activated' : 'nav-items'}>
+                                                <Link href="/admin/connectsubdomain" legacyBehavior><a href="" className="a-active"><i className="fa fa-palette a-active"></i><p>Connected Subdomain</p></a></Link>
+                                            </li>
+                                        {/* <Link href="/admin/allsubdomain" legacyBehavior><a className=""><i className="fa fa-user-circle"></i><li>All Subdomains</li></a></Link>
+                                        <Link href="/admin/pendingsubdomain" legacyBehavior><a className=""><i className="fa fa-user-circle"></i><li>Pending Subdomains</li></a></Link>
+                                        <Link href="/admin/connectsubdomain" legacyBehavior><a className=""><i className="fa fa-user-circle"></i><li>Connected Subdomain</li></a></Link> */}
+
+                                            {/* <li>All Subdomains</li>
                                             <li>Pending Subdomains</li>
-                                            <li>Connected Subdomains</li>
+                                            <li>Connected Subdomains</li> */}
                                         </ul>
                                     </div>
                                     <li className="nav-items">
