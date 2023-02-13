@@ -116,9 +116,9 @@ const AdminSlider = () => {
                                     </li>
                                     <div className="collapse  div-collapse" id="collapseExamplsubHome" >
                                         <ul className="nav_collapse">
-                                            <li>Hero Section</li>
-                                            <li>Intro Section</li>
-                                            <li>Work Process</li>
+                                            <Link href="/admin/herosection" legacyBehavior><li>Hero Section</li></Link>
+                                            <Link href="/admin/introsection" legacyBehavior><li>Intro Section</li></Link>
+                                            <Link href="/admin/workprocess" legacyBehavior><li>Work Process</li></Link>
                                             <li>Testimonials</li>
                                             <li>Section Titles</li>
                                             <li>Section Hide/Show</li>
