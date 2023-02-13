@@ -1,3 +1,7 @@
+.td-data span{
+    margin-left: 5px;
+}
+
 .slider_convas{
     position: fixed;
     top: 0;

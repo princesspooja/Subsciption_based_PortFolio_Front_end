@@ -84,9 +84,9 @@ const AdminSlider = () => {
                                     </li>
                                     <div className="collapse  div-collapse" id="collapseExamplsub" >
                                         <ul className="nav_collapse">
-                                            <li >
+                                            <Link href="/admin/allsubdomain" legacyBehavior><li >
                                                 All Subdomains
-                                            </li>
+                                            </li></Link>
                                             <Link href="/admin/pendingsubdomain" legacyBehavior><li >
                                                 Pending Subdomains
                                             </li></Link>
@@ -102,8 +102,8 @@ const AdminSlider = () => {
                                             <li>Connected Subdomains</li> */}
                                         </ul>
                                     </div>
-                                    <li className="nav-items">
-                                        <a className=""><i className="fa fa-users"></i><p>Registered Users</p></a>
+                                    <li className={router.asPath == '/admin/registeruser' ? 'activated' : 'nav-items'} >
+                                        <Link href="/admin/registeruser" legacyBehavior><a className=""><i className="fa fa-users"></i><p>Registered Users</p></a></Link>
                                     </li>
                                     <li className="nav-items">
                                         <a className=""><i className="fas fa-bars"></i><p>Menu Builder</p></a>
@@ -119,9 +119,9 @@ const AdminSlider = () => {
                                             <Link href="/admin/herosection" legacyBehavior><li>Hero Section</li></Link>
                                             <Link href="/admin/introsection" legacyBehavior><li>Intro Section</li></Link>
                                             <Link href="/admin/workprocess" legacyBehavior><li>Work Process</li></Link>
-                                            <li>Testimonials</li>
-                                            <li>Section Titles</li>
-                                            <li>Section Hide/Show</li>
+                                            <Link href="/admin/testimonial" legacyBehavior><li>Testimonials</li></Link>
+                                            <Link href="/admin/sectiontitle" legacyBehavior><li>Section Titles</li></Link>
+                                            <Link href="/admin/section" legacyBehavior><li>Section Hide/Show</li></Link>
                                         </ul>
                                     </div>
                                     <li className="nav-items">
@@ -161,7 +161,7 @@ const AdminSlider = () => {
                                         <Link href="/admin/faqs" legacyBehavior><a className=""><i className="fa fa-question"></i><p>FAQ Management</p></a></Link>
                                     </li>
                                     <li className="nav-items">
-                                        <a className=""><i className="fa-brands fa-whatsapp"></i><p>Contact Page</p></a>
+                                        <Link href="/admin/contact" legacyBehavior><a className=""><i className="fa-brands fa-whatsapp"></i><p>Contact Page</p></a></Link>
                                     </li>
 
                                     <li className="nav-items">
@@ -195,8 +195,8 @@ const AdminSlider = () => {
                                     </li>
                                     <div className="collapse  div-collapse" id="collapseExamplasub" >
                                         <ul className="nav_collapse">
-                                            <li>Subscribers</li>
-                                            <li>Main to Subscribers</li>
+                                            <Link href="/admin/subscribers" legacyBehavior><li>Subscribers</li></Link>
+                                            <Link href="/admin/mainsubscriber" legacyBehavior><li>Main to Subscribers</li></Link>
                                         </ul>
                                     </div>
 
@@ -207,8 +207,8 @@ const AdminSlider = () => {
                                     </li>
                                     <div className="collapse  div-collapse" id="collapseExamplangate" >
                                         <ul className="nav_collapse">
-                                            <li>Online Gateways</li>
-                                            <li>Offline Gateways</li>
+                                            <Link href="/admin/gateways" legacyBehavior><li>Online Gateways</li></Link>
+                                            <Link href="/admin/offline-gateways" legacyBehavior><li>Offline Gateways</li></Link>
                                         </ul>
                                     </div>
 
@@ -255,10 +255,10 @@ const AdminSlider = () => {
                                         <a className=""><i className="fa-regular fa-comments"></i><p>Language Management</p></a>
                                     </li>
                                     <li className="nav-items">
-                                        <a className=""><i className="fa fa-toggle-on"></i><p>Role Management</p></a>
+                                        <Link href="/admin/roles" legacyBehavior><a className=""><i className="fa fa-toggle-on"></i><p>Role Management</p></a></Link>
                                     </li>
                                     <li className="nav-items">
-                                        <a className=""><i className="fa fa-user"></i><p>Admins Management</p></a>
+                                        <Link href="/admin/users" legacyBehavior><a className=""><i className="fa fa-user"></i><p>Admins Management</p></a></Link>
                                     </li>
                                     <li className="nav-items">
                                         <a className=""><i className="fa fa-xmark"></i><p>Clear Cache</p></a>
