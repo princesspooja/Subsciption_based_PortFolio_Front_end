@@ -8,18 +8,16 @@ const Features = () => {
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
         </Head>
 
-        <div className="container">
-            <div className="page-head">
-                <h4 className="page-tittle">Package Features</h4>
-                <ul className="page-subdomain">
-                    <li><a href=""><i className="fa fa-home"></i></a></li>
-                    <li><i className="fa fa-chevron-right"></i></li>
-                    <li>Packages Management</li>
-                    <li><i className="fa fa-chevron-right"></i></li>
-                    <li> Package Features</li>
-                </ul>
-            </div>
-        </div>
+        <div className="page_header">
+      <h4 className="table_h4">Package Features</h4>
+      <ul className="table_ul">
+        <li className="home_font"><a href=""><i className="fa fa-home"></i></a></li>
+        <li className="seprator_data"><i className="fa fa-angle-right"></i></li>
+        <li className="home_datas"><a> Packages Management</a></li>
+        <li className="seprator_data"><i className="fa fa-angle-right"></i></li>
+        <li className="home_datas"><a href="">Package Features</a></li>
+      </ul>
+    </div>
         <div className="container">
             <div className="row">
                 <div className="col-sm">

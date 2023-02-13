@@ -9,18 +9,16 @@ const Settings = () => {
 
         </Head>
 
-        <div className="container">
-            <div className="page-head">
-                <h4 className="page-tittle"> Settings</h4>
-                <ul className="page-subdomain">
-                    <li><a href=""><i className="fa fa-home"></i></a></li>
-                    <li><i className="fa fa-chevron-right"></i></li>
-                    <li> Package Management</li>
-                    <li><i className="fa fa-chevron-right"></i></li>
-                    <li>Settings</li>
-                </ul>
-            </div>
-        </div>
+        <div className="page_header">
+      <h4 className="table_h4">Settings</h4>
+      <ul className="table_ul">
+        <li className="home_font"><a href=""><i className="fa fa-home"></i></a></li>
+        <li className="seprator_data"><i className="fa fa-angle-right"></i></li>
+        <li className="home_datas"><a> Package Management </a></li>
+        <li className="seprator_data"><i className="fa fa-angle-right"></i></li>
+        <li className="home_datas"><a href="">Settings</a></li>
+      </ul>
+    </div>
         <div className="container">
             <div className="row">
                 <div className="col-sm">
@@ -31,7 +29,7 @@ const Settings = () => {
                                 <div className="col-lg-4 setting-form">
                                     <div className="col-12 mb-2 image-setting">
                                         <label for="exampleColorInput" className="form-label">Remind Before (Days) **</label>
-                                        <input type="number" name="expiration_reminder" class="form-control"  />
+                                        <input type="number" name="expiration_reminder" class="form-control" />
                                     </div>
                                 </div>
                             </div>

@@ -57,7 +57,7 @@ const Herosection = () => {
                         <div className="edit-card-title">Update Hero Section</div>
                         <div className="row">
                             <div className="col-sm-6">
-                                <select className="form-select" aria-label="Default select example">
+                                <select className="form-select " aria-label="Default select example">
                                     <option selected>Select language</option>
                                     <option value="1">English</option>
                                     <option value="2">Hindi</option>
