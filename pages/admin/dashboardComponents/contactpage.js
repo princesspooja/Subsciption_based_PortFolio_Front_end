@@ -11,7 +11,7 @@ const Contactpage = () => {
         <title>Profilex - User Dashboard-edit profile</title>
     </Head>
             <div className="edit-page-header">
-                <h4 className="edit-page-title">Edit Profile</h4>
+                <h4 className="edit-page-title">Contact Page</h4>
                 <ul className="breadcrumbs">
                     <li className="nav-home">
                         <a>
@@ -25,7 +25,7 @@ const Contactpage = () => {
                     </li>
                     <li className="nav-item">
                         <a>
-                          Edit Profile
+                           Contact Page
                         </a>
                     </li>
                 </ul>
@@ -34,7 +34,7 @@ const Contactpage = () => {
               <div className="col-md-12">
                 <div className="edit-card">
                   <div className="edit-card-header ">
-                    <div className="edit-card-title">Update Profile</div>
+                    <div className="edit-card-title">Contact Page</div>
                   </div>
                   <div className="edit-card-body">
                     <div className="row">
@@ -43,27 +43,36 @@ const Contactpage = () => {
                           <div className="row ">
                             <div className="form-group">
                               <label>Form Title **</label>
-                              <input type="text" name="first_name" className="form-control" />
+                              <input type="text"  className="form-control" placeholder="Enter from title"/>
                             </div>
                             <div className="form-group">
-                              <label >Last Name **</label>
-                              <input type="text" name="last_name"  className="form-control" value="Sara"/>
+                              <label >Information Title **</label>
+                              <input type="text"   className="form-control" placeholder="Enter information Title" />
                             </div>
                             <div className="form-group">
                               <label >Address **</label>
-                              <textarea type="text" name="addres" className="form-control" cols="30" rows="10">CA ,USA</textarea>
+                              <textarea type="text" className="form-control" cols="4" rows="3"> House - 44, Road - 03, Sector - 11, Uttara, DhakaDhanmondi, DhakaMohammadpur, Dhaka</textarea>
+                              <div style={{ color:"#ffad46" }}>
+                                 Use newline to seperate multiple addresses.
+                              </div>
                             </div>
                             <div className="form-group">
-                              <label >City **</label>
-                              <input type="text" name="citry"  className="form-control" value="CA"/>
+                              <label >Contact Information Text **</label>
+                              <input type="text" name="citry"  className="form-control" placeholder="Enter information text"/>
                             </div>
                             <div className="form-group">
-                              <label >State **</label>
-                              <input type="text" name="state" id="" className="form-control" value="CA"/>
+                              <label >Phone **</label>
+                              <input type="text" name="state" id="" className="form-control" placeholder="Enter phone number"/>
+                              <div style={{ color:"#ffad46" }}>
+                                Use comma (,) to add multiple Phone Numbers
+                              </div>
                             </div>
                             <div className="form-group">
-                              <label >Country **</label>
-                              <input type="text" name="country" id="" className="form-control" value="USA"/>
+                              <label >Email **</label>
+                              <input type="text" name="country" id="" className="form-control" placeholder="Enter Email Addresses"/>
+                              <div style={{ color:"#ffad46" }}>
+                                Use comma (,) to add multiple Email Addresses
+                              </div>
                             </div>
                           </div>
                         </form>
