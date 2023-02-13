@@ -11,14 +11,13 @@ const Packages = () => {
             <title>Profilex - User Dashboard</title>
         </Head>
         <div className="page_header">
-            <h4 className="table_h4">Packages</h4>
-            <ul className="table_ul">
-                <li className="home_font"><a href=""><i className="fa fa-home"></i></a></li>
-                <li className="seprator_data"><i className="fa fa-angle-right"></i></li>
-                <li className="home_datas"><a>Packages</a></li>
-
-            </ul>
-        </div>
+      <h4 className="table_h4">Packages</h4>
+      <ul className="table_ul">
+        <li className="home_font"><a href=""><i className="fa fa-home"></i></a></li>
+        <li className="seprator_data"><i className="fa fa-angle-right"></i></li>
+        <li className="home_datas"><a> Packages</a></li>
+      </ul>
+    </div>
 
         <div className="row">
             <div className="col-md-12">
