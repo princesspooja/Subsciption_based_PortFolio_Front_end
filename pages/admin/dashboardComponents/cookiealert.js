@@ -73,7 +73,7 @@ const cookiealert = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="edit-card-footer ">
+                  <div className="edit-card-footer mt-5">
                     <form action="">
                       <div className="form-group">
                         <div className="col-md-12 btn-center">

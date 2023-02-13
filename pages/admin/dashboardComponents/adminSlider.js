@@ -161,7 +161,9 @@ const AdminSlider = () => {
                                         <Link href="/admin/faqs" legacyBehavior><a className=""><i className="fa fa-question"></i><p>FAQ Management</p></a></Link>
                                     </li>
                                     <li className="nav-items">
-                                        <a className=""><i className="fa-brands fa-whatsapp"></i><p>Contact Page</p></a>
+                                        <Link href="admin/contactpage"legacyBehavior>
+                                         <a className=""><i className="fa-brands fa-whatsapp"></i><p>Contact Page</p></a>
+                                        </Link>
                                     </li>
 
                                     <li className="nav-items">
@@ -219,17 +221,35 @@ const AdminSlider = () => {
                                     </li>
                                     <div className="collapse  div-collapse" id="collapseExamplseti" >
                                         <ul className="nav_collapse">
-                                            <li>Fevicon</li>
-                                            <li>Logo</li>
-                                            <li>General Settings</li>
+                                            <Link rel="stylesheet" href="/admin/favicon" legacyBehavior>
+                                                <li>Fevicon</li>
+                                            </Link>
+                                            <Link href="/admin/logo" legacyBehavior>
+                                                <li>Logo</li>
+                                            </Link>
+                                            <Link href="/admin/basicinformations" legacyBehavior>
+                                                <li>General Settings</li>
+                                            </Link>
                                             <li>Email Settings</li>
-                                            <li>Preloader</li>
-                                            <li>Breadcrumbs</li>
-                                            <li>Social Links</li>
+                                            <Link href="/admin/preloader" legacyBehavior>
+                                                <li>Preloader</li>
+                                            </Link>
+                                            <Link href="/admin/breadcrumb" legacyBehavior>
+                                                <li>Breadcrumbs</li>
+                                            </Link>
+                                            <Link href="/admin/socaillinks" legacyBehavior>
+                                                <li>Social Links</li>
+                                            </Link>
                                             <li>Plugins</li>
-                                            <li>Maintainance Mode</li>
-                                            <li>Cookies Alert</li>
-                                            <li>SEO Information</li>
+                                            <Link href="/admin/maintenancemode" legacyBehavior>
+                                                <li>Maintainance Mode</li>
+                                            </Link>
+                                            <Link href="/admin/cookiealert" legacyBehavior>
+                                                <li>Cookies Alert</li>
+                                            </Link>
+                                            <Link href="/admin/seoinformation" legacyBehavior>
+                                                <li>SEO Information</li>
+                                            </Link>
                                         </ul>
                                     </div>
 
