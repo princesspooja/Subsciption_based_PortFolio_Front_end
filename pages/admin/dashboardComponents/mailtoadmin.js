@@ -56,13 +56,20 @@ const Mailtoadmin = () => {
                   <div className="mail_toadmin-card-header ">
                     <div className="mail_toadmin-card-title">Mail To Admin</div>
                   </div>
-                  <div className="mail_toadmin-card-body">
+                  <div className="mail_toadmin-card-body mt-5">
                     <div className="row">
                       <div className="col-lg-6 offset-lg-3">
                         <form action="">
                           <div className="row ">
                             <div className="col-g-12">
                             </div>
+                            <div>
+                                  <div class="alert alert-warning package feature">
+                                    <strong>
+                                    This mail addres will be used to send all mails from this website.
+                                    </strong>
+                                    </div>
+                              </div>
                             <div className="form-group">
                               <label>Email Address **</label>
                               <input type="text" name="email_addres" className="form-control" value="pratik.anwar@gmail.com"/>

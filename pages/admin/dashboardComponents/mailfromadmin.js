@@ -56,13 +56,20 @@ const Editprofiles = () => {
                   <div className="admin_mail-card-header ">
                     <div className="admin_mail-card-title">Mail From Admin</div>
                   </div>
-                  <div className="admin_mail-card-body">
+                  <div className="admin_mail-card-body mt-5">
                     <div className="row">
                       <div className="col-lg-6 offset-lg-3">
                         <form action="">
                           <div className="row ">
                             <div className="col-g-12">
                             </div>
+                              <div>
+                                  <div class="alert alert-warning package feature">
+                                    <strong>
+                                      This mail addres will be used to send all mails from this website.
+                                    </strong>
+                                  </div>
+                              </div>
                             <div className="form-group">
                               <label>SMTP Status **</label>
                               <div className="groupselect">

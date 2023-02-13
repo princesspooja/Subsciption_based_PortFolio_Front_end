@@ -63,12 +63,8 @@
     padding: 1.25rem;
 }
 
-.mail_toadmin-image{
-    padding: 0.25rem;
-    background-color: #fff;
-    border: 1px solid #dee2e6;
-    border-radius: 0.25rem;
-    height: auto;
+.groupselect-input{
+    visibility: hidden;
 }
 
 /* responsive */

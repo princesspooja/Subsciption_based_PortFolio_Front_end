@@ -1,6 +1,6 @@
 import AdminLayout from "../../components/adminLayout";
-import contactpage from "./dashboardComponents/contactpage";
-const Contactpage = () => {
+import Contactpage from "./dashboardComponents/contactpage";
+const contactpage = () => {
   return (
     <>
       <AdminLayout>
