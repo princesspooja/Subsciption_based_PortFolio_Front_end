@@ -23,6 +23,7 @@ export default function Layout({children}) {
 
       {/* <!-- slider --> */}
       <Slider />
+      <div className='shrinwas'>
       <div className="main_panel">
         <div className="main_contents">
           <div className="pageinner_data">
@@ -32,6 +33,7 @@ export default function Layout({children}) {
         <Footer />
 
       </div>
+    </div>
     </div>
     <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></Script>
     </div>

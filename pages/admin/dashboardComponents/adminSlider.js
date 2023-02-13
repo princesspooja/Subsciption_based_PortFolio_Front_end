@@ -9,9 +9,9 @@ const AdminSlider = () => {
     const router = useRouter();
     return (<>
         <Head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
-    </Head>
+        </Head>
 
         <div className="slider slidebar-style-2" id="offcanvasExample">
             <div className="scroll-wrappers">
@@ -84,16 +84,16 @@ const AdminSlider = () => {
                                     </li>
                                     <div className="collapse  div-collapse" id="collapseExamplsub" >
                                         <ul className="nav_collapse">
-                                            <li className={router.asPath == '/admin/dashboard' ? 'activated' : 'nav-items'}>
-                                                <Link href="/admin/allsubdomain" legacyBehavior><a href="" className="a-active"><i className="fa fa-palette a-active"></i><p>All Subdomains</p></a></Link>
+                                            <li >
+                                                All Subdomains
                                             </li>
-                                            <li className={router.asPath == '/admin/dashboard' ? 'activated' : 'nav-items'}>
-                                                <Link href="/admin/pendingsubdomain" legacyBehavior><a href="" className="a-active"><i className="fa fa-palette a-active"></i><p>Pending Subdomains</p></a></Link>
+                                            <Link href="/admin/pendingsubdomain" legacyBehavior><li >
+                                                Pending Subdomains
+                                            </li></Link>
+                                            <li >
+                                                <Link href="/admin/connectsubdomain" legacyBehavior><a href="" className="a-active"><p>Connected Subdomain</p></a></Link>
                                             </li>
-                                            <li className={router.asPath == '/admin/dashboard' ? 'activated' : 'nav-items'}>
-                                                <Link href="/admin/connectsubdomain" legacyBehavior><a href="" className="a-active"><i className="fa fa-palette a-active"></i><p>Connected Subdomain</p></a></Link>
-                                            </li>
-                                        {/* <Link href="/admin/allsubdomain" legacyBehavior><a className=""><i className="fa fa-user-circle"></i><li>All Subdomains</li></a></Link>
+                                            {/* <Link href="/admin/allsubdomain" legacyBehavior><a className=""><i className="fa fa-user-circle"></i><li>All Subdomains</li></a></Link>
                                         <Link href="/admin/pendingsubdomain" legacyBehavior><a className=""><i className="fa fa-user-circle"></i><li>Pending Subdomains</li></a></Link>
                                         <Link href="/admin/connectsubdomain" legacyBehavior><a className=""><i className="fa fa-user-circle"></i><li>Connected Subdomain</li></a></Link> */}
 
@@ -160,8 +160,8 @@ const AdminSlider = () => {
                                     <li className={router.asPath == "/admin/faqs" ? 'activated' : 'nav-items'}>
                                         <Link href="/admin/faqs" legacyBehavior><a className=""><i className="fa fa-question"></i><p>FAQ Management</p></a></Link>
                                     </li>
-                                    <li className="nav-items">
-                                        <a className=""><i className="fa-brands fa-whatsapp"></i><p>Contact Page</p></a>
+                                    <li className={router.asPath == "/admin/contact" ? 'activated' : 'nav-items'}>
+                                        <Link href="/admin/contact" legacyBehavior><a className=""><i className="fa-brands fa-whatsapp"></i><p>Contact Page</p></a></Link>
                                     </li>
 
                                     <li className="nav-items">
@@ -214,7 +214,7 @@ const AdminSlider = () => {
 
                                     <li className="nav-items">
                                         <a data-bs-toggle="collapse" href="#collapseExamplseti" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                        <i class="fa-solid fa-gear"></i><p>setting</p><span className="paret_setting"></span>
+                                            <i className="fa-solid fa-gear"></i><p>setting</p><span className="paret_setting"></span>
                                         </a>
                                     </li>
                                     <div className="collapse  div-collapse" id="collapseExamplseti" >
@@ -234,7 +234,7 @@ const AdminSlider = () => {
                                     </div>
 
                                     <li className="nav-items">
-                                        <a className=""><i class="fa-regular fa-comments"></i><p>Language Management</p></a>
+                                        <a className=""><i className="fa-regular fa-comments"></i><p>Language Management</p></a>
                                     </li>
                                     <li className="nav-items">
                                         <a className=""><i className="fa fa-toggle-on"></i><p>Role Management</p></a>
@@ -253,7 +253,7 @@ const AdminSlider = () => {
                 </div>
             </div>
         </div>
-    <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></Script>
+        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></Script>
 
 
     </>)
