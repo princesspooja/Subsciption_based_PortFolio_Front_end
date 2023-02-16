@@ -10,15 +10,15 @@ const Settings = () => {
         </Head>
 
         <div className="page_header">
-      <h4 className="table_h4">Settings</h4>
-      <ul className="table_ul">
-        <li className="home_font"><a href=""><i className="fa fa-home"></i></a></li>
-        <li className="seprator_data"><i className="fa fa-angle-right"></i></li>
-        <li className="home_datas"><a> Package Management </a></li>
-        <li className="seprator_data"><i className="fa fa-angle-right"></i></li>
-        <li className="home_datas"><a href="">Settings</a></li>
-      </ul>
-    </div>
+            <h4 className="table_h4">Settings</h4>
+            <ul className="table_ul">
+                <li className="home_font"><a href=""><i className="fa fa-home"></i></a></li>
+                <li className="seprator_data"><i className="fa fa-angle-right"></i></li>
+                <li className="home_datas"><a> Package Management </a></li>
+                <li className="seprator_data"><i className="fa fa-angle-right"></i></li>
+                <li className="home_datas"><a href="">Settings</a></li>
+            </ul>
+        </div>
         <div className="container">
             <div className="row">
                 <div className="col-sm">
