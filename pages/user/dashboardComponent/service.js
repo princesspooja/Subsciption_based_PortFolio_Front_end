@@ -3,7 +3,9 @@ import Head from "next/head";
 import Image from "next/image";
 import Quill from "./quil";
 
+
 const Service = () => {
+
   return (<>
     <Head>
       <link

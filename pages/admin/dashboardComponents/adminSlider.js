@@ -90,9 +90,9 @@ const AdminSlider = () => {
                                             <Link href="/admin/pendingsubdomain" legacyBehavior><li >
                                                 Pending Subdomains
                                             </li></Link>
-                                            <li >
-                                                <Link href="/admin/connectsubdomain" legacyBehavior><a href="" className="a-active"><p>Connected Subdomain</p></a></Link>
-                                            </li>
+                                            <Link href="/admin/connectsubdomain" legacyBehavior><li >
+                                                Connected Subdomain
+                                            </li></Link>
                                             {/* <Link href="/admin/allsubdomain" legacyBehavior><a className=""><i className="fa fa-user-circle"></i><li>All Subdomains</li></a></Link>
                                         <Link href="/admin/pendingsubdomain" legacyBehavior><a className=""><i className="fa fa-user-circle"></i><li>Pending Subdomains</li></a></Link>
                                         <Link href="/admin/connectsubdomain" legacyBehavior><a className=""><i className="fa fa-user-circle"></i><li>Connected Subdomain</li></a></Link> */}
@@ -121,7 +121,7 @@ const AdminSlider = () => {
                                             <Link href="/admin/workprocess" legacyBehavior><li>Work Process</li></Link>
                                             <Link href="/admin/testimonial" legacyBehavior><li>Testimonials</li></Link>
                                             <Link href="/admin/sectiontitle" legacyBehavior><li>Section Titles</li></Link>
-                                            <Link href="/admin/section" legacyBehavior><li>Section Hide/Show</li></Link>
+                                            <Link href="/admin/sections" legacyBehavior><li>Section Hide/Show</li></Link>
                                         </ul>
                                     </div>
                                     <li className="nav-items">
@@ -154,7 +154,7 @@ const AdminSlider = () => {
                                     <div className="collapse  div-collapse" id="collapseExamplBlogs" >
                                         <ul className="nav_collapse">
                                             <Link href="/admin/bcategorys" legacyBehavior><li>Category</li></Link>
-                                            <Link href="/admin/blogs"><li>Blogs</li></Link>
+                                            <Link href="/admin/blogs" legacyBehavior><li>Blogs</li></Link>
                                         </ul>
                                     </div>
                                     <li className={router.asPath == "/admin/faqs" ? 'activated' : 'nav-items'}>
@@ -184,7 +184,7 @@ const AdminSlider = () => {
                                     <div className="collapse  div-collapse" id="collapseExamplanoti" >
                                         <ul className="nav_collapse">
                                             <Link href="/admin/pushnotification/notifications" legacyBehavior><li>Settings</li></Link>
-                                            <Link href="/admin/pushnotification/send"><li>Send Notifications</li></Link>
+                                            <Link href="/admin/pushnotification/send" legacyBehavior><li>Send Notifications</li></Link>
                                         </ul>
                                     </div>
 
