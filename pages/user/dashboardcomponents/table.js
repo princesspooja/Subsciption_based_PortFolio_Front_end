@@ -125,8 +125,8 @@ const Table =({data})=>{
                                                     return(<>
                                                     <tr key={datas._id}>
                                                     <td><input type="checkbox" name="" id="" /></td>
-                                                    <td>{datas.username}</td>
                                                     <td>{datas.title}</td>
+                                                    <td>{datas.language}</td>
                                                     <td>{datas.percentage}</td>
 
                                                     <td className="td-data"><a ><button type="button" className="btn btn-primary"><i className="fa fa-edit"></i><span>Edit</span></button></a>  <a><button type="button" className="btn btn-danger" onClick={() => handleDelete(datas._id)}><i className="fa fa-trash"></i><span>Delete</span> </button></a></td>
