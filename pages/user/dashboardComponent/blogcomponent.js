@@ -1,8 +1,57 @@
 import Script from "next/script";
 import Head from "next/head";
 import Image from "next/image";
+import { useRouter } from "next/router";
+import { useState } from "react";
+import axios from "axios";
 
-const Blogcomponent = () => {
+const Blogcomponent = ({ blogData }) => {
+    const [blogsData,setBlogData] = useState({
+        username: "pooja",
+        language: "",
+        name : "",
+        status: "",
+        serialnumber : ""
+    })
+
+    const onData = (e)=>{
+        setBlogData({
+            ...blogsData,
+            [e.target.name]: e.target.value,
+          });
+    }
+
+    const onDataClick = (e)=>{
+        e.preventDefault();
+        axios.post("http://localhost:4000/blogcategory",blogsData).then((data)=>{
+            alert("Data has been inserted");
+            router.push("/user/blog-categories");
+        
+          }).catch(err=>console.log(err));
+
+    }
+
+
+
+
+    const router = useRouter();
+
+    function handleDelete(id) {
+        console.log(id);
+        fetch(`http://localhost:4000/blogcategory/${id}`, {
+          method: "DELETE",
+        })
+        .then((response)=>response.json())
+        .then((daa)=>{
+          const setdd = blogData.filter((dat)=>{
+            return dat._id !== id;
+          })
+          router.push("/user/blog-categories");
+        })
+        .catch((err)=>console.log(err));
+    
+      }
+  
     return (<>
         <Head>
             <link
@@ -71,22 +120,21 @@ const Blogcomponent = () => {
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        <tr>
-                                                            <td><input type="checkbox" name="" id="" /></td>
-                                                            <td>Otto</td>
-                                                            <td>Active</td>
-                                                            <td>1</td>
+                                                        {
+                                                            blogData?.map((data) => {
+                                                                return (<>
+                                                                    <tr>
+                                                                        <td><input type="checkbox" name="" id="" /></td>
+                                                                        <td>{data.name}</td>
+                                                                        <td>{(data.status==false) ? 'Deactive' : 'Active'}</td>
+                                                                        <td>{data.serialnumber}</td>
+                                                                        <td className="td-data"><a ><button type="button" className="btn btn-primary"><i className="fa fa-edit"></i><span>Edit</span></button></a>  <a><button type="button" className="btn btn-danger" onClick={()=>handleDelete(data._id)}><i className="fa fa-trash"></i><span>Delete</span> </button></a></td>
+                                                                    </tr>
 
-                                                            <td className="td-data"><a ><button type="button" className="btn btn-primary"><i className="fa fa-edit"></i><span>Edit</span></button></a>  <a><button type="button" className="btn btn-danger"><i className="fa fa-trash"></i><span>Delete</span> </button></a></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><input type="checkbox" name="" id="" /></td>
-                                                            <td>Otto</td>
-                                                            <td>Active</td>
-                                                            <td>2</td>
+                                                                </>)
+                                                            })
+                                                        }
 
-                                                            <td className="td-data"><a ><button type="button" className="btn btn-primary"><i className="fa fa-edit"></i><span>Edit</span></button></a>  <a><button type="button" className="btn btn-danger"><i className="fa fa-trash"></i><span>Delete</span> </button></a></td>
-                                                        </tr>
 
 
                                                     </tbody>
@@ -113,36 +161,36 @@ const Blogcomponent = () => {
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body">
-                           
+
                             <div className="row">
                                 <div className="col-sm-12 mt-3">
                                     <label for="exampleInputEmail1" className="form-label">Language**</label>
-                                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Select a Language" />
+                                    <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Select a Language" name="language" onChange={(e)=>onData(e)} />
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-sm-12 mt-3">
                                     <label for="exampleInputEmail1" className="form-label">Name**</label>
-                                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name"/>
+                                    <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name" name="name" onChange={(e)=>onData(e)}/>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-sm-12 mt-3">
                                     <label for="exampleInputEmail1" className="form-label">Status **</label>
-                                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Select a satatus"/>
+                                    <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Select a satatus" name="status" onChange={(e)=>onData(e)} />
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-sm-12 mt-5">
                                     <label for="exampleInputEmail1" className="form-label">Serial Number**</label>
-                                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Serial Number" />
+                                    <input type="number" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Serial Number" name="serialnumber" onChange={(e)=>onData(e)} />
                                     <div id="emailHelp" className="form-text text-warning">The higher the serial number is, the later the Skill will be shown.</div>
                                 </div>
                             </div>
                         </div>
                         <div className="modal-footer">
                             <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" className="btn btn-primary">Submit</button>
+                            <button type="button" className="btn btn-primary" onClick={e=>onDataClick(e)}>Submit</button>
                         </div>
                     </div>
                 </div>
