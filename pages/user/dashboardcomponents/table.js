@@ -1,6 +1,58 @@
+import axios from "axios";
 import Head from "next/head";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
-const Table = ()=>{
+
+
+
+const Table =({data})=>{
+  const router = useRouter();
+  const [formData,setformData] = useState({
+    username: "saifali",
+    title : "",
+    language: "",
+    percentage: "",
+    color: "",
+    serial_number:""
+  })
+
+  const getData = (e)=>{
+    setformData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  }
+  const handleClick = (e)=>{
+    e.preventDefault();
+    console.log(formData);
+
+  axios.post("http://localhost:4000/skills",formData).then((data)=>{
+    alert("Data has been inserted");
+    router.push("/user/skill");
+
+  }).catch(err=>console.log(err));
+
+
+  }
+
+  function handleDelete(id) {
+      fetch(`http://localhost:4000/skills/${id}`, {
+        method: "DELETE",
+      })
+      .then((response)=>response.json())
+      .then((daa)=>{
+        const setdd = data.filter((dat)=>{
+          return dat._id !== id;
+        })
+        router.push("/user/skill");
+      })
+      .catch((err)=>console.log(err));
+  
+    }
+
+
+  // console.log(data);
     return(<>
         <Head>
         <link
@@ -69,23 +121,19 @@ const Table = ()=>{
                                                   </tr>
                                                 </thead>
                                                 <tbody>
-                                                  <tr>
+                                                  { data?.map((datas)=>{
+                                                    return(<>
+                                                    <tr key={datas._id}>
                                                     <td><input type="checkbox" name="" id="" /></td>
-                                                    <td>Mark</td>
-                                                    <td>Otto</td>
-                                                    <td>Otto</td>
+                                                    <td>{datas.title}</td>
+                                                    <td>{datas.language}</td>
+                                                    <td>{datas.percentage}</td>
 
-                                                    <td className="td-data"><a ><button type="button" className="btn btn-primary"><i className="fa fa-edit"></i><span>Edit</span></button></a>  <a><button type="button" className="btn btn-danger"><i className="fa fa-trash"></i><span>Delete</span> </button></a></td>
+                                                    <td className="td-data"><a ><button type="button" className="btn btn-primary"><i className="fa fa-edit"></i><span>Edit</span></button></a>  <a><button type="button" className="btn btn-danger" onClick={() => handleDelete(datas._id)}><i className="fa fa-trash"></i><span>Delete</span> </button></a></td>
                                                   </tr>
-                                                  <tr>
-                                                    <td><input type="checkbox" name="" id="" /></td>
-                                                    <td>Mark</td>
-                                                    <td>Otto</td>
-                                                    <td>Otto</td>
-
-                                                    <td className="td-data"><a ><button type="button" className="btn btn-primary"><i className="fa fa-edit"></i><span>Edit</span></button></a>  <a><button type="button" className="btn btn-danger"><i className="fa fa-trash"></i><span>Delete</span> </button></a></td>
-                                                  </tr>
-                    
+                                                    </>)
+                                                  })
+                                                  }
                     
                                                 </tbody>
                                               </table>
@@ -114,39 +162,40 @@ const Table = ()=>{
         <div className="row">
           <div className="col-sm-12">
             <label >Language**</label>
-            <select className="form-select" aria-label="Default select example">
+            <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="language" onChange={e=>getData(e)} />
+            {/* <select className="form-select" aria-label="Default select example">
               <option selected>Select language</option>
               <option value="1">English</option>
               <option value="2">Hindi</option>
-            </select>
+            </select> */}
           </div>
         </div>
         <div className="row">
           <div className="col-sm-6 mt-3">
             <label for="exampleInputEmail1" className="form-label">Title**</label>
-            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="title" onChange={e=>getData(e)} />
           </div>
           <div className="col-sm-6 float-right mt-3">
             <label for="exampleInputEmail1" className="form-label">Percentage**</label>
-            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="percentage" onChange={e=>getData(e)} />
             <div id="emailHelp" className="form-text text-warning">The Percentage should be between 1 to 100.</div>
           </div>
         </div>
         <div className="row">
           <div className="col-sm-6 mt-3">
             <label for="exampleInputEmail1" className="form-label">Color**</label>
-            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="color" onChange={e=>getData(e)} />
           </div>
           <div className="col-sm-6 mt-3">
             <label for="exampleInputEmail1" className="form-label">Serial Number</label>
-            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="serial_number" onChange={e=>getData(e)} />
             <div id="emailHelp" className="form-text text-warning">The higher the serial number is, the later the Skill will be shown.</div>
           </div>
         </div>
       </div>
       <div className="modal-footer">
         <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" className="btn btn-primary">Submit</button>
+        <button type="button" className="btn btn-primary" onClick={e=>handleClick(e)}>Submit</button>
       </div>
     </div>
   </div>

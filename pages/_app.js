@@ -24,6 +24,21 @@ import '../styles/adminDashboard/mailtoadmin.css'
 import '../styles/adminDashboard/maintenancemode.css'
 import '../styles/adminDashboard/basicinformations.css'
 
+// admin user
+import '../styles/adminUser/profiles.css'
+
+
+
+// user admin ui
+// import '../styles/userAdmin/profile.css'
+// import '../styles/userAdmin/pricing.css'
+// import '../styles/userAdmin/termsandcondtion.css'
+// import '../styles/userAdmin/layoutimage.css'
+// import '../styles/userAdmin/navbar.css'
+
+
+
+
 
 
 
