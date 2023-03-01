@@ -10,17 +10,17 @@ const Sections = () => {
         </Head>
 
         <div className="page_header">
-      <h4 className="table_h4">Section Customization</h4>
-      <ul className="table_ul">
-        <li className="home_font"><a href=""><i className="fa fa-home"></i></a></li>
-        <li className="seprator_data"><i className="fa fa-angle-right"></i></li>
-        <li className="home_datas"><a> Website Pages</a></li>
-        <li className="seprator_data"><i className="fa fa-angle-right"></i></li>
-        <li className="home_datas"><a href=""> Settings </a></li>
-        <li className="seprator_data"><i className="fa fa-angle-right"></i></li>
-        <li className="home_datas"><a href="">Section Customization</a></li>
-      </ul>
-    </div>
+            <h4 className="table_h4">Section Customization</h4>
+            <ul className="table_ul">
+                <li className="home_font"><a href=""><i className="fa fa-home"></i></a></li>
+                <li className="seprator_data"><i className="fa fa-angle-right"></i></li>
+                <li className="home_datas"><a> Website Pages</a></li>
+                <li className="seprator_data"><i className="fa fa-angle-right"></i></li>
+                <li className="home_datas"><a href=""> Settings </a></li>
+                <li className="seprator_data"><i className="fa fa-angle-right"></i></li>
+                <li className="home_datas"><a href="">Section Customization</a></li>
+            </ul>
+        </div>
         <div className="container">
             <div className="row">
                 <div className="col-sm">
@@ -204,14 +204,14 @@ const Sections = () => {
 
                             </div>
                             <div className="edit-card-footer mt-3">
-                        <form action="">
-                            <div className="form-group">
-                                <div className="col-md-12 btn-center">
-                                    <button type="submit" id="btn-submit" className="btn btn-success">Update</button>
-                                </div>
+                                <form action="">
+                                    <div className="form-group">
+                                        <div className="col-md-12 btn-center">
+                                            <button type="submit" id="btn-submit" className="btn btn-success">Update</button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                        </form>
-                    </div>
 
                         </div>
                     </div>

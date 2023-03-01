@@ -24,7 +24,9 @@ import '../styles/adminDashboard/mailtoadmin.css'
 import '../styles/adminDashboard/maintenancemode.css'
 import '../styles/adminDashboard/basicinformations.css'
 
+//admin user
 
+import '../styles/adminUser/contact.css'
 
 
 export default function App({ Component, pageProps }) {
